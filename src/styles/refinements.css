@@ -25,9 +25,6 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
 .mosaic-action .image-cta-icon{width:28px;height:28px}
 .mosaic-footer{align-items:flex-start}
 .mosaic-footer .text-link{flex:none}
-.golf-panel{width:43%;padding:45px}
-.golf-feature{min-height:750px}
-.golf-feature>img{height:650px}
 .section-heading p br{display:none}
 .city-card h3 .image-cta-icon{margin-top:3px}
 .review-quotes blockquote{font-family:var(--sans);font-style:normal}
@@ -49,7 +46,6 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
 @media(max-width:1100px){
  .header .brand small{font-size:19px;gap:5px}
  .header .brand small i{display:none}
- .golf-panel{width:50%;padding:35px}
  .section-heading{align-items:flex-start;flex-direction:column}
  .mosaic-footer{flex-direction:column;align-items:center;text-align:center}
  .city-grid{grid-template-columns:1fr}
@@ -84,9 +80,6 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
  .mosaic-label{padding:20px 12px 50px}
  .mosaic-label>span{letter-spacing:0;line-height:1.5}
  .mosaic-action{width:34px;height:34px;bottom:12px;right:12px}
- .golf-feature{min-height:0}
- .golf-feature>img{height:360px}
- .golf-panel{width:auto;margin:-40px 20px 0;padding:30px;position:relative;right:auto}
  .comfort ul{grid-template-columns:1fr}
  .footer-top .brand{gap:10px;align-items:flex-start}
  .footer-top .brand small{letter-spacing:.03em;line-height:1.5}
