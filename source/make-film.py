@@ -1,5 +1,5 @@
-"""Original JPEGs to H.264 hero films. Output resolution is an upscale,
-not native Full HD photography. Requires Pillow and imageio-ffmpeg.
+"""Original Airbnb JPEGs to native Full HD H.264 hero films.
+Requires Pillow and imageio-ffmpeg; see source/airbnb/media.json for provenance.
 """
 import argparse
 import json
@@ -14,12 +14,12 @@ from PIL import Image
 
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 ASSETS = ROOT / 'public/assets'
-LEGACY = ROOT / 'source/legacy'
+ORIGINALS = ROOT / 'source/airbnb/originals'
 FPS = 30
 SECONDS = 6
 FADE = 1
 # Return to the first scene: no abrupt jump when the background loops.
-SHOTS = [(25,.55), (38,.51), (30,.51), (28,.46), (40,.37), (25,.55)]
+SHOTS = [(30,.55), (31,.51), (6,.51), (17,.46), (33,.37), (30,.55)]
 DURATION = 25
 
 def render(mobile):
@@ -29,7 +29,7 @@ def render(mobile):
     output = ASSETS/name
     args = [FFMPEG, '-y', '-filter_complex_threads', '2']
     for photo,_ in SHOTS:
-        args += ['-i', str(LEGACY/f'{photo}.jpg')]
+        args += ['-i', str(ORIGINALS/f'{photo:02d}.jpg')]
     filters = []
     for i,(_,focus) in enumerate(SHOTS):
         # Larger working still reduces whole-pixel stepping in slow zooms.
@@ -49,7 +49,9 @@ def render(mobile):
         last=out
     filters.append(f'[{last}]trim=start=1:end=26,setpts=PTS-STARTPTS,unsharp=5:5:0.22:3:3:0[film]')
     args += ['-filter_complex',';'.join(filters),'-map','[film]','-an',
-             '-c:v','libx264','-preset','slow','-crf','19' if mobile else '18',
+             '-c:v','libx264','-preset','slow','-crf','21' if mobile else '20',
+             '-maxrate','2500k' if mobile else '6000k','-bufsize','5000k' if mobile else '12000k',
+             '-r','30','-fps_mode','cfr',
              '-threads','4','-pix_fmt','yuv420p','-profile:v','high','-level','4.1',
              '-color_primaries','bt709','-color_trc','bt709','-colorspace','bt709',
              '-movflags','+faststart',str(output)]

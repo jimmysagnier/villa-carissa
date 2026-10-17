@@ -1,4 +1,5 @@
 ---
+import { AIRBNB_URL } from '../data/villa';
 interface Props { currentPage: string }
 const { currentPage } = Astro.props;
 const home = currentPage === 'home';
@@ -19,7 +20,7 @@ const links = [
   <a class="brand" href="/" aria-label="Villa Carissa, accueil">
     <span class="wordmark"><span class="wordmark-villa">VILLA</span><span class="wordmark-name">CARISSA</span><small><i></i>SAMANAH · MARRAKECH<i></i></small></span>
   </a>
-  <a class="button header-cta" href="/contact/">RÉSERVER <span aria-hidden="true">↗</span></a>
+  <a class="button header-cta" href={AIRBNB_URL} target="_blank" rel="noopener noreferrer" aria-label="Réserver sur Airbnb (nouvel onglet)">RÉSERVER <span aria-hidden="true">↗</span></a>
   <button class="menu-scrim" aria-label="Fermer le menu" tabindex="-1" hidden></button>
   <nav id="navigation" aria-label="Navigation principale" inert>
     <span class="menu-eyebrow">BIENVENUE À LA VILLA CARISSA</span>

@@ -33,33 +33,40 @@ Les anciennes ancres de galerie `#salon`, `#chambre` et `#exterieur` activent le
 
 ## Photos et montage
 
-Les 44 médias d’origine et les exports WordPress (pages, articles, médiathèque, sitemap) sont archivés dans `source/legacy/`. La galerie présente les 15 photographies distinctes des espaces de la villa ; les autres photographies de voyage et de golf illustrent les pages correspondantes. Les portraits de démonstration de l’ancien thème ne sont pas utilisés.
+Les médias et textes de l’ancien WordPress restent archivés dans `source/legacy/`. Le site présente désormais les **34 photographies de l’annonce Airbnb**, réparties par pièce. Les sources et dimensions figurent dans `src/data/photos.json`, l’audit dans `source/airbnb/README.md`. Les originaux sont conservés localement dans `source/airbnb/originals/` (ignoré par Git). Des WebP responsives de 800, 1600 et 2400 pixels maximum sont incluses dans `public/assets/airbnb/`.
 
-Deux vidéos de 25 secondes sont montées directement depuis les cinq JPEG originaux de la villa, sans recompression WebP intermédiaire :
+Deux vidéos de 25 secondes sont montées directement depuis cinq JPEG haute définition de l’annonce :
 
-- `villa-carissa-film.mp4` : 1920 × 1080, 30 images/s, H.264 CRF 18.
-- `villa-carissa-mobile.mp4` : 720 × 1280, 30 images/s, cadrages verticaux dédiés, H.264 CRF 19.
+- `villa-carissa-film.mp4` : 1920 × 1080, 30 images/s, H.264 CRF 20, débit plafonné à 6 Mbit/s.
+- `villa-carissa-mobile.mp4` : 720 × 1280, 30 images/s, cadrages verticaux dédiés, H.264 CRF 21, débit plafonné à 2,5 Mbit/s.
 
-Les zooms sont plus légers, les fondus durent une seconde, et la dernière transition revient au même point de la première photo pour former une boucle continue. Le calcul sur un canevas intermédiaire de plus haute résolution réduit les pas de pixels dans les mouvements lents. Les affiches WebP sont extraites de la première image exacte de chaque vidéo pour éviter un changement de cadrage au démarrage. Les MP4 ont leur index en tête pour commencer la lecture avant le téléchargement complet.
+Les sources de ces plans dépassent 5 000 pixels de large : le nouvel export Full HD est obtenu par réduction, contrairement au premier montage réalisé à partir des photos de 1 403 pixels de l’ancien site. Le film reste un montage photographique, sans détail architectural généré. Zooms lents, fondus d’une seconde et retour au premier plan assurent une boucle continue. Les affiches WebP sont extraites de la première image exacte de chaque film.
 
-**Limite réelle :** les JPEG d’origine mesurent 1403 × 937 pixels. Le Full HD est un agrandissement, pas une prise de vue native en 1080p ou 4K. Le montage ne crée aucun détail architectural et reste un montage photo, pas une visite filmée.
+Seul le fichier adapté au mobile ou à l’ordinateur est chargé. La préférence de réduction des animations empêche le chargement automatique. La lecture s’interrompt hors écran et dans les onglets en arrière-plan ; un bouton permet de la mettre en pause.
 
-Le mobile ne charge que son propre fichier. Une image de remplacement est toujours présente et le chargement vidéo est différé jusqu’au script de lecture. Aucune vidéo de fond n’est chargée si la préférence de réduction des animations est active. La lecture s’interrompt lorsque le hero sort de l’écran ou que l’onglet passe en arrière-plan. Le bouton de pause reste disponible. Le film dans la fenêtre de lecture utilise la version horizontale Full HD.
-
-Pour reconstruire les films (Pillow disponible dans l’interpréteur et imageio-ffmpeg dans `.venv`) :
+Pour récupérer les originaux depuis les seules URL déjà relevées et reconstruire les vidéos (Pillow et imageio-ffmpeg requis) :
 
 ```sh
+python3 source/import-airbnb-photos.py
 python3 source/make-film.py
 ```
 
-## Demandes de séjour
+## Descriptif et mosaïque
 
-Le choix des dates et des voyageurs sur l’accueil préremplit le contact. Le formulaire ouvre la messagerie du visiteur avec un email préparé ; il ne simule pas un envoi et ne réserve pas de séjour. Aucun stockage ni service d’envoi n’est connecté. Le lien Airbnb d’origine est conservé : `https://www.airbnb.fr/rooms/14479193`.
+Le hero est suivi du descriptif vérifié avec l’annonce, puis de six tuiles photo : Dormir, Extérieur, Salon, Piscine, À table et Bains. Chaque tuile ouvre la galerie filtrée. Les anciennes ancres restent accessibles ; de nouvelles catégories `#repas`, `#bain` et `#golf` complètent la visite.
+
+Deux courts extraits d’avis récents, attribués et datés, remplacent l’ancien avis de 2019. La note de 4,53/5 et les 113 avis sont un relevé du 17 octobre 2026, indiqué comme tel, avec un lien vers l’ensemble des commentaires. Aucun avis n’est présenté comme synchronisé.
+
+## Réservation exclusivement sur Airbnb
+
+Tous les appels à réserver ouvrent `https://www.airbnb.fr/rooms/14479193`. Le formulaire de séjour et le choix local de dates ont été supprimés. La page Contact est conservée et renvoie aux disponibilités et à la messagerie hôte sur Airbnb.
+
+Le lien d’export iCal n’étant pas accessible depuis l’annonce publique, aucun calendrier local n’est affiché. Un éventuel affichage ultérieur nécessiterait le lien d’export du compte hôte et une synchronisation côté serveur ; même dans ce cas les tarifs, règles de séjour et réservations resteraient gérés par Airbnb.
 
 ## À confirmer avant remplacement du site actuel
 
-- Tarif, conditions de réservation et éventuelle solution d’envoi direct du formulaire.
-- Actualité des coordonnées de contact et des services repris du site original.
+- Vérifier les tarifs et conditions directement sur Airbnb. Aucune solution de réservation directe n’est prévue.
+- Actualité des coordonnées de contact conservées depuis le site original.
 - Mise à jour des mentions légales historiques de 2019, notamment éditeur, hébergeur et données personnelles.
 - Anciennes réductions sur les green fees et les Bains de Marrakech : archivées dans les exports, omises de l’interface car non confirmées.
 - Domaine définitif, canonicals, sitemap public et redirections HTTP. Le domaine WordPress actuel n’a pas été modifié.

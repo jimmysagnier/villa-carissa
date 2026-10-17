@@ -1,3 +1,6 @@
+---
+import { AIRBNB_URL } from '../data/villa';
+---
 <section class="hero" aria-label="Bienvenue à la Villa Carissa">
   <div class="hero-media">
     <picture>
@@ -11,7 +14,7 @@
     <span class="hero-ornament" aria-hidden="true"><i></i>◇<i></i></span>
     <span class="eyebrow">VILLA PRIVÉE · GOLF DE SAMANAH</span>
     <h1>Une villa à vous.<br>Tout Marrakech à vivre.</h1>
-    <a href="/contact/" class="button glass">RÉSERVER UN SÉJOUR</a>
+    <a href={AIRBNB_URL} target="_blank" rel="noopener noreferrer" class="button glass">RÉSERVER SUR AIRBNB</a>
   </div>
   <div class="hero-bottom">
     <p class="hero-details">4 CHAMBRES <span>·</span> 4 SALLES DE BAIN <span>·</span> 8 VOYAGEURS</p>

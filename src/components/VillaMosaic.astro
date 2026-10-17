@@ -1,0 +1,23 @@
+---
+import Photo from './Photo.astro';
+const tiles = [
+  {key:'dormir',title:'Dormir',subtitle:'QUATRE CHAMBRES, QUATRE SALLES DE BAIN',photo:17,hash:'chambre'},
+  {key:'exterieur',title:'Extérieur',subtitle:'LE JARDIN & LES TERRASSES',photo:31,hash:'exterieur'},
+  {key:'salon',title:'Salon',subtitle:'SE RETROUVER',photo:6,hash:'salon'},
+  {key:'piscine',title:'Piscine',subtitle:'RIEN QU’À VOUS',photo:32,hash:'exterieur'},
+  {key:'repas',title:'À table',subtitle:'LE PLAISIR DE PARTAGER',photo:10,hash:'repas'},
+  {key:'bains',title:'Bains',subtitle:'UNE PAUSE POUR SOI',photo:24,hash:'bain'},
+];
+---
+<section class="villa-spaces" id="espaces" aria-labelledby="spaces-title">
+  <div class="mosaic-heading"><span class="eyebrow">LA MAISON EN IMAGES</span><h2 id="spaces-title">À chaque espace,<br><em>ses petits moments.</em></h2></div>
+  <div class="villa-mosaic">
+    {tiles.map(tile=><a class={`mosaic-tile mosaic-${tile.key}`} href={`/toutes-les-photos/#${tile.hash}`} aria-label={`Découvrir ${tile.title.toLowerCase()} en photos`}>
+      <Photo id={tile.photo} sizes={tile.key==='dormir'?'(max-width: 600px) 100vw, 35vw':'(max-width: 600px) 50vw, 40vw'} />
+      <span class="mosaic-shade"></span>
+      <div class="mosaic-label"><h3>{tile.title}</h3><span>{tile.subtitle}</span></div>
+      <span class="mosaic-arrow" aria-hidden="true">↗</span>
+    </a>)}
+  </div>
+  <div class="mosaic-footer"><p>De la maison au jardin, une visite à votre rythme.</p><a href="/toutes-les-photos/" class="text-link">Toutes les photos <span aria-hidden="true">↗</span></a></div>
+</section>

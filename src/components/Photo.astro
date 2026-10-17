@@ -1,0 +1,19 @@
+---
+import photos from '../data/photos.json';
+interface Props {
+  id: number;
+  alt?: string;
+  sizes?: string;
+  loading?: 'lazy' | 'eager';
+  class?: string;
+}
+const { id, alt, sizes='(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw', loading='lazy', class:className='' } = Astro.props;
+const photo = photos.find(p=>p.id===id);
+if (!photo) throw new Error(`Unknown villa photo: ${id}`);
+const candidates = [800,1600].map(size=>{
+  const width = Math.round(photo.width*Math.min(1,size/Math.max(photo.width,photo.height)));
+  return { width, src:photo.src.replace('.webp',`-${size}.webp`) };
+});
+const srcset = [...new Map(candidates.map(p=>[p.width,p])).values()].map(p=>`${p.src} ${p.width}w`).join(', ');
+---
+<img src={photo.src} srcset={srcset} sizes={sizes} alt={alt||photo.caption} width={photo.width} height={photo.height} loading={loading} decoding="async" class={className} />

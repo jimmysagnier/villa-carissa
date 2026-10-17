@@ -1,0 +1,65 @@
+.villa-description{max-width:1100px;margin:0 auto;padding:100px 55px 90px;text-align:center}
+.villa-description>.eyebrow{color:#8c7853;font-size:9px;letter-spacing:.24em}
+.villa-description h2{font-size:clamp(43px,4.5vw,66px);line-height:1.08;margin:24px 0 30px}
+.description-rule{display:block;width:48px;height:1px;background:#b2a07c;margin:0 auto 38px}
+.description-copy{display:grid;grid-template-columns:1fr 1fr;gap:42px;text-align:left}
+.description-copy p{font-size:13px;line-height:2.05;color:#606858}
+.description-copy p+p{margin-top:0}
+.villa-facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;margin:40px 0 23px}
+.villa-facts>div{display:flex;flex-direction:column-reverse;align-items:center;justify-content:center;border-right:1px solid var(--line)}
+.villa-facts>div:last-child{border:0}
+.villa-facts dt{font-size:8px;letter-spacing:.15em;margin-top:10px;color:var(--muted)}
+.villa-facts dd{font:49px/1 var(--serif);margin:0}
+.villa-facts dd small{font-size:23px}
+.villa-location{font-size:10px;line-height:1.9;max-width:660px;margin:0 auto}
+.villa-description>.text-link{margin-top:28px;gap:35px}
+.villa-spaces{padding:0 24px 80px;max-width:1800px;margin:auto}
+.mosaic-heading{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.villa-mosaic{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(2,clamp(260px,25vw,410px));gap:12px}
+.mosaic-tile{position:relative;overflow:hidden;isolation:isolate;background:#3b4538;color:#fff;display:block}
+.mosaic-tile>img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;transition:transform .9s cubic-bezier(.2,.6,.2,1)}
+.mosaic-shade{position:absolute;inset:0;background:linear-gradient(180deg,#17231908,#17231942 50%,#17231960);transition:background .4s}
+.mosaic-tile:hover>img,.mosaic-tile:focus-visible>img{transform:scale(1.045)}
+.mosaic-tile:hover .mosaic-shade,.mosaic-tile:focus-visible .mosaic-shade{background:#19281e55}
+.mosaic-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;gap:15px;text-shadow:0 2px 15px #0005}
+.mosaic-label h3{font:400 clamp(34px,3vw,52px)/1 var(--serif);letter-spacing:-.01em}
+.mosaic-label>span{font-size:7px;font-weight:500;letter-spacing:.15em;line-height:1.9;max-width:220px}
+.mosaic-arrow{position:absolute;right:22px;bottom:22px;width:32px;height:32px;display:grid;place-items:center;border:1px solid #ffffff70;border-radius:50%;font-size:17px;transition:background .3s}
+.mosaic-tile:hover .mosaic-arrow{background:#ffffff20}
+.mosaic-dormir{grid-column:1/5;grid-row:1/3}
+.mosaic-dormir>img{object-position:46% center}
+.mosaic-exterieur{grid-column:5/10;grid-row:1}
+.mosaic-salon{grid-column:10/13;grid-row:1}
+.mosaic-salon>img{object-position:60% center}
+.mosaic-piscine{grid-column:5/8;grid-row:2}
+.mosaic-repas{grid-column:8/11;grid-row:2}
+.mosaic-bains{grid-column:11/13;grid-row:2}
+.mosaic-bains>img{object-position:51% center}
+.mosaic-footer{display:flex;justify-content:space-between;align-items:center;padding:25px 25px 0;gap:25px}
+.mosaic-footer p{font-size:10px}
+.mosaic-footer .text-link{font-size:10px;gap:30px}
+.guest-reviews{padding:90px 50px 80px;border-top:1px solid var(--line);text-align:center;max-width:1200px;margin:auto}
+.review-heading .eyebrow{font-size:8px;color:#8c7853}
+.review-heading h2{font-size:57px;margin:22px 0 45px}
+.review-quotes{display:grid;grid-template-columns:1fr 1fr;gap:65px;margin-bottom:38px}
+.review-quotes figure{margin:0;padding:0 20px}
+.review-quotes figure+figure{border-left:1px solid var(--line)}
+.review-quote-mark{font:75px/.7 var(--serif);color:#a5936e;display:block;margin-bottom:12px}
+.review-quotes blockquote{font:italic 31px/1.3 var(--serif);margin:0 0 23px}
+.review-quotes figcaption{font-size:10px}
+.review-quotes figcaption span{display:block;font-size:8px;color:var(--muted);margin-top:5px}
+.review-source{font-size:8px;line-height:1.8;margin-top:22px}
+.booking-channel{font-size:9px;color:#d5d9cd;margin:19px auto 0;line-height:1.8}
+.gallery-section .filters{gap:22px}
+.gallery-section .filters button{white-space:nowrap}
+.contact-reservation{max-width:560px;align-self:center}
+.contact-reservation>.eyebrow{color:#8c7853;margin-bottom:22px}
+.contact-reservation h2{font-size:56px;margin-bottom:28px}
+.contact-reservation>p{font-size:12px;line-height:2}
+.contact-reservation>.button{margin:28px 0 22px;font-size:11px;padding:19px 25px}
+.contact-reservation>.text-link{font-size:11px}
+.contact-reservation .booking-note{padding:22px 0 0;border-top:1px solid var(--line);font-size:10px;margin-top:28px}
+.page-contact .contact-layout{padding-top:0;padding-bottom:100px}
+@media(max-width:1000px){.villa-description{padding:80px 45px}.description-copy{gap:30px}.villa-mosaic{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(3,280px)}.mosaic-dormir{grid-column:1/4;grid-row:1/3}.mosaic-exterieur{grid-column:4/7;grid-row:1}.mosaic-salon{grid-column:4/7;grid-row:2}.mosaic-piscine{grid-column:1/3;grid-row:3}.mosaic-repas{grid-column:3/5;grid-row:3}.mosaic-bains{grid-column:5/7;grid-row:3}.mosaic-label h3{font-size:40px}.guest-reviews{padding:70px 35px}.review-quotes{gap:25px}.review-quotes blockquote{font-size:29px}.contact-reservation h2{font-size:44px}}
+@media(max-width:600px){.villa-description{padding:65px 25px 55px}.villa-description h2{font-size:43px;margin:21px 0 25px}.villa-description>.eyebrow{font-size:8px}.description-rule{margin-bottom:28px}.description-copy{grid-template-columns:1fr;gap:17px;text-align:left}.description-copy p{font-size:12px;line-height:2}.villa-facts{margin-top:30px;padding:23px 0}.villa-facts dd{font-size:35px}.villa-facts dd small{font-size:17px}.villa-facts dt{font-size:5px;letter-spacing:.07em;margin-top:9px}.villa-location{font-size:9px;line-height:1.9}.villa-description>.text-link{font-size:10px}.villa-spaces{padding:0 10px 55px}.villa-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:230px;gap:8px}.mosaic-tile{grid-column:auto;grid-row:auto}.mosaic-dormir{grid-column:1/-1;grid-row:span 2}.mosaic-bains{grid-column:1/-1}.mosaic-bains>img{object-position:center 42%}.mosaic-label{padding:18px 12px;gap:12px}.mosaic-label h3{font-size:34px}.mosaic-dormir .mosaic-label h3{font-size:48px}.mosaic-label>span{font-size:6px;letter-spacing:.08em}.mosaic-arrow{right:16px;bottom:16px;width:28px;height:28px;font-size:16px}.mosaic-footer{padding:24px 15px 0;flex-direction:column;align-items:center;gap:18px}.mosaic-footer p{font-size:10px;text-align:center}.mosaic-footer .text-link{font-size:10px}.guest-reviews{padding:55px 25px}.review-heading h2{font-size:44px;margin-bottom:35px}.review-quotes{grid-template-columns:1fr;gap:32px}.review-quotes figure{padding:0}.review-quotes figure+figure{border:0;border-top:1px solid var(--line);padding-top:35px}.review-quotes blockquote{font-size:30px}.review-source{font-size:7px;max-width:280px;margin:20px auto 0}.booking-channel{font-size:8px;max-width:250px}.gallery-section .filters{gap:7px 16px}.gallery-section .filters button{font-size:9px}.page-contact .contact-layout{padding-bottom:65px}.contact-reservation h2{font-size:44px}.contact-reservation>.eyebrow{font-size:8px}.contact-reservation>.button{width:100%;justify-content:space-between}.contact-reservation>p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.mosaic-tile>img,.mosaic-shade,.mosaic-arrow{transition:none}}

@@ -1,0 +1,342 @@
+[
+  {
+    "id": 1,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/8813c26a-8e34-48f7-9338-44de3bedafa3.jpg?im_w=1200",
+    "width": 5188,
+    "height": 3463,
+    "src": "/assets/airbnb/01.webp",
+    "caption": "Le salon et son ouverture sur la terrasse",
+    "group": "salon"
+  },
+  {
+    "id": 2,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/3f968164-bdc5-45fc-aae9-97aa5579fb56.jpg?im_w=720",
+    "width": 5313,
+    "height": 3547,
+    "src": "/assets/airbnb/02.webp",
+    "caption": "L’entrée et la pièce à vivre",
+    "group": "salon"
+  },
+  {
+    "id": 3,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/28d53d92-2bd4-4a5f-90e9-92cfa9936048.jpg?im_w=720",
+    "width": 5770,
+    "height": 3852,
+    "src": "/assets/airbnb/03.webp",
+    "caption": "L’entrée de la maison",
+    "group": "salon"
+  },
+  {
+    "id": 4,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/bd333c32-e2f8-45cb-a248-f83c0d2d297b.jpg?im_w=1200",
+    "width": 5646,
+    "height": 3769,
+    "src": "/assets/airbnb/04.webp",
+    "caption": "Le salon au pied de l’escalier",
+    "group": "salon"
+  },
+  {
+    "id": 5,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/4ee01566-c0a0-4b24-aef9-0ee077b72b5a.jpeg?im_w=720",
+    "width": 5227,
+    "height": 3489,
+    "src": "/assets/airbnb/05.webp",
+    "caption": "Le salon côté jardin",
+    "group": "salon"
+  },
+  {
+    "id": 6,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/6d67078e-3fc8-4770-aa56-6297c1c24e34.jpeg?im_w=720",
+    "width": 5803,
+    "height": 3874,
+    "src": "/assets/airbnb/06.webp",
+    "caption": "Le salon avec cheminée",
+    "group": "salon"
+  },
+  {
+    "id": 7,
+    "category": "Salon",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/a05334db-c22a-4ae7-aa85-c2947dc00104.jpeg?im_w=1200",
+    "width": 5159,
+    "height": 3444,
+    "src": "/assets/airbnb/07.webp",
+    "caption": "Le salon et sa télévision",
+    "group": "salon"
+  },
+  {
+    "id": 8,
+    "category": "Cuisine entière",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/529adbeb-2ae3-4a2c-8898-42f4ea4a7da6.jpeg?im_w=1200",
+    "width": 5803,
+    "height": 3874,
+    "src": "/assets/airbnb/08.webp",
+    "caption": "La cuisine",
+    "group": "repas"
+  },
+  {
+    "id": 9,
+    "category": "Espace repas",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/b2563acf-7b50-41fe-ab50-3b0dd399cdc2.jpg?im_w=720",
+    "width": 5397,
+    "height": 3603,
+    "src": "/assets/airbnb/09.webp",
+    "caption": "La salle à manger",
+    "group": "repas"
+  },
+  {
+    "id": 10,
+    "category": "Espace repas",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/781d8c51-6644-444b-bf09-e376234e0224.jpeg?im_w=720",
+    "width": 5306,
+    "height": 3542,
+    "src": "/assets/airbnb/10.webp",
+    "caption": "La table de la salle à manger",
+    "group": "repas"
+  },
+  {
+    "id": 11,
+    "category": "Chambre 1",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/afd5ff54-083e-4ab7-a983-07b271515651.jpeg?im_w=1200",
+    "width": 1747,
+    "height": 1477,
+    "src": "/assets/airbnb/11.webp",
+    "caption": "La chambre aux tons bleus",
+    "group": "chambre"
+  },
+  {
+    "id": 12,
+    "category": "Chambre 1",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/2b3ec490-403e-4e9d-92be-7d275669816c.jpg?im_w=720",
+    "width": 5880,
+    "height": 3925,
+    "src": "/assets/airbnb/12.webp",
+    "caption": "La chambre et sa salle de bain",
+    "group": "chambre"
+  },
+  {
+    "id": 13,
+    "category": "Chambre 1",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/805a04ef-c517-497b-b98f-163b1a679a6f.jpg?im_w=720",
+    "width": 5267,
+    "height": 3516,
+    "src": "/assets/airbnb/13.webp",
+    "caption": "L’accès à la chambre",
+    "group": "chambre"
+  },
+  {
+    "id": 14,
+    "category": "Chambre 2",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/5a6aa5ae-9566-44f2-9348-07ff345428e0.jpeg?im_w=1200",
+    "width": 2279,
+    "height": 1575,
+    "src": "/assets/airbnb/14.webp",
+    "caption": "La chambre au rez-de-chaussée",
+    "group": "chambre"
+  },
+  {
+    "id": 15,
+    "category": "Chambre 2",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/f83ca71a-8d54-4007-b96b-a775db4eb800.jpg?im_w=720",
+    "width": 5479,
+    "height": 3658,
+    "src": "/assets/airbnb/15.webp",
+    "caption": "La chambre ouverte sur le jardin",
+    "group": "chambre"
+  },
+  {
+    "id": 16,
+    "category": "Chambre 2",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/b7e816c2-4df6-4053-9fb9-ecac001e1c64.jpg?im_w=720",
+    "width": 5674,
+    "height": 3788,
+    "src": "/assets/airbnb/16.webp",
+    "caption": "Un détail de décoration",
+    "group": "chambre"
+  },
+  {
+    "id": 17,
+    "category": "Chambre 3",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/17f86238-aa63-4db0-baff-3055b750eb79.jpg?im_w=720",
+    "width": 5847,
+    "height": 3903,
+    "src": "/assets/airbnb/17.webp",
+    "caption": "La suite parentale",
+    "group": "chambre"
+  },
+  {
+    "id": 18,
+    "category": "Chambre 3",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/c7a55a27-b9a4-405c-97c2-6ce9772f642e.jpg?im_w=720",
+    "width": 6016,
+    "height": 4016,
+    "src": "/assets/airbnb/18.webp",
+    "caption": "La terrasse de la suite parentale",
+    "group": "chambre"
+  },
+  {
+    "id": 19,
+    "category": "Chambre 4",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/8da22ddb-b256-47a4-9d57-170418ab364b.jpg?im_w=1200",
+    "width": 5803,
+    "height": 3874,
+    "src": "/assets/airbnb/19.webp",
+    "caption": "Le hall et l’escalier",
+    "group": "chambre"
+  },
+  {
+    "id": 20,
+    "category": "Chambre 4",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/bac21513-10a2-4f6a-a46a-ee552a114d5d.jpeg?im_w=720",
+    "width": 5295,
+    "height": 3535,
+    "src": "/assets/airbnb/20.webp",
+    "caption": "La chambre côté jardin",
+    "group": "chambre"
+  },
+  {
+    "id": 21,
+    "category": "Chambre 4",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/55a93142-ad61-4a2e-9045-1506a5c023b0.jpeg?im_w=720",
+    "width": 5104,
+    "height": 3407,
+    "src": "/assets/airbnb/21.webp",
+    "caption": "La chambre donnant sur la terrasse",
+    "group": "chambre"
+  },
+  {
+    "id": 22,
+    "category": "Salle de bains entière 1",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/c663f46c-a061-4b65-886c-68481215e249.jpg?im_w=1200",
+    "width": 5450,
+    "height": 3638,
+    "src": "/assets/airbnb/22.webp",
+    "caption": "Une salle de bain avec douche",
+    "group": "bain"
+  },
+  {
+    "id": 23,
+    "category": "Salle de bains entière 2",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/c20b1290-4ba0-4560-b00b-76100931a051.jpeg?im_w=1200",
+    "width": 2463,
+    "height": 1537,
+    "src": "/assets/airbnb/23.webp",
+    "caption": "La salle de bain avec baignoire",
+    "group": "bain"
+  },
+  {
+    "id": 24,
+    "category": "Salle de bains entière 3",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/d03224fb-fbd2-4ca8-80f0-e1fdd7d302bc.jpg?im_w=1200",
+    "width": 5409,
+    "height": 3611,
+    "src": "/assets/airbnb/24.webp",
+    "caption": "Une salle d’eau",
+    "group": "bain"
+  },
+  {
+    "id": 25,
+    "category": "Salle de bains entière 4",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/2e40382e-9e8f-4b96-9778-98159ce96247.jpg?im_w=720",
+    "width": 5504,
+    "height": 3674,
+    "src": "/assets/airbnb/25.webp",
+    "caption": "La douche attenante à la chambre",
+    "group": "bain"
+  },
+  {
+    "id": 26,
+    "category": "Salle de bains entière 4",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/d557f536-697b-496f-aa83-7d74bf9d08f6.jpg?im_w=720",
+    "width": 5226,
+    "height": 3489,
+    "src": "/assets/airbnb/26.webp",
+    "caption": "La salle d’eau aux zelliges bleus",
+    "group": "bain"
+  },
+  {
+    "id": 27,
+    "category": "Extérieur",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/c3c15fb3-80c7-4ff3-8e69-d459545a68bb.jpg?im_w=1200",
+    "width": 5737,
+    "height": 3830,
+    "src": "/assets/airbnb/27.webp",
+    "caption": "L’entrée de la villa",
+    "group": "exterieur"
+  },
+  {
+    "id": 28,
+    "category": "Extérieur",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/4ff444be-6552-4bb8-8fe1-fa6c4c065b7b.jpg?im_w=720",
+    "width": 960,
+    "height": 628,
+    "src": "/assets/airbnb/28.webp",
+    "caption": "Le golf de Samanah face à l’Atlas",
+    "group": "golf"
+  },
+  {
+    "id": 29,
+    "category": "Extérieur",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/b42e47c0-c8b3-4e31-a76e-921570131f6e.jpg?im_w=720",
+    "width": 960,
+    "height": 573,
+    "src": "/assets/airbnb/29.webp",
+    "caption": "Le panorama sur le domaine de Samanah",
+    "group": "golf"
+  },
+  {
+    "id": 30,
+    "category": "Extérieur",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/70696a9e-4977-447f-b646-3b58c3532a6d.jpeg?im_w=720",
+    "width": 5943,
+    "height": 3343,
+    "src": "/assets/airbnb/30.webp",
+    "caption": "La villa et sa piscine privée",
+    "group": "exterieur"
+  },
+  {
+    "id": 31,
+    "category": "Extérieur",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/8795c529-5175-4a37-a993-d349865b1973.jpeg?im_w=720",
+    "width": 5024,
+    "height": 3354,
+    "src": "/assets/airbnb/31.webp",
+    "caption": "Le jardin et la piscine depuis la terrasse",
+    "group": "exterieur"
+  },
+  {
+    "id": 32,
+    "category": "Piscine",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/c375fe81-d099-49e8-8636-61e8e2e665e6.jpeg?im_w=720",
+    "width": 1280,
+    "height": 960,
+    "src": "/assets/airbnb/32.webp",
+    "caption": "La piscine et les transats",
+    "group": "exterieur"
+  },
+  {
+    "id": 33,
+    "category": "Piscine",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-14479193/original/ea197fd8-7ca8-4148-a4d4-2504ac488d70.jpeg?im_w=720",
+    "width": 5806,
+    "height": 3266,
+    "src": "/assets/airbnb/33.webp",
+    "caption": "La terrasse au bord de la piscine",
+    "group": "exterieur"
+  },
+  {
+    "id": 34,
+    "category": "Photos supplémentaires",
+    "sourceUrl": "https://a0.muscache.com/im/pictures/28e4d72c-7d59-4fa3-9fb4-5763c82f632f.jpg?im_w=1200",
+    "width": 721,
+    "height": 1280,
+    "src": "/assets/airbnb/34.webp",
+    "caption": "Le lit bébé",
+    "group": "details"
+  }
+]
