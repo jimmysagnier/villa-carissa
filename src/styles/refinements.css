@@ -1,0 +1,102 @@
+/* Shared pictograms and spacing for the 19px reading size. */
+.golf-ball{display:inline-block;flex:none;width:24px;height:24px;vertical-align:middle;transition:transform .3s ease}
+a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
+.button{gap:22px;letter-spacing:.04em;text-align:left}
+.text-link{gap:24px;max-width:100%;text-align:left}
+.text-link>span,.nav-arrow{display:inline-flex;flex:none;align-items:center}
+.text-link:hover span{transform:none}
+.eyebrow{letter-spacing:.1em;line-height:1.6}
+.header .brand small{letter-spacing:.02em;gap:9px}
+.brand small i{width:15px}
+.header .header-cta{gap:20px;letter-spacing:.04em}
+.header .menu-toggle b{top:6px;letter-spacing:.08em}
+.page-home .hero-content .eyebrow{letter-spacing:.12em;line-height:1.6}
+.page-home .hero-content .glass{display:inline-flex;gap:22px;align-items:center;letter-spacing:.05em}
+.description-copy p,.villa-location,.review-quotes blockquote{line-height:1.8}
+.villa-facts{padding:34px 0}
+.villa-facts>div{flex-direction:column;gap:12px;padding:0 15px}
+.villa-fact-icon{color:#85734f;margin-bottom:5px;flex:none}
+.villa-facts dt{order:3;margin:0;letter-spacing:.025em;line-height:1.5}
+.villa-facts dd{order:2;font-family:var(--sans);font-weight:600;line-height:1.5}
+.villa-facts .villa-fact-icon{order:1}
+.villa-location{max-width:800px}
+.mosaic-label>span{letter-spacing:.035em;line-height:1.5}
+.mosaic-arrow{width:38px;height:38px}
+.mosaic-arrow .golf-ball{width:25px;height:25px}
+.mosaic-footer{align-items:flex-start}
+.mosaic-footer .text-link{flex:none}
+.golf-panel{width:43%;padding:45px}
+.golf-feature{min-height:750px}
+.golf-feature>img{height:650px}
+.section-heading p br{display:none}
+.city-card h3 .golf-ball{margin-top:3px}
+.review-quotes blockquote{font-family:var(--sans);font-style:normal}
+.review-source{max-width:850px;margin-left:auto;margin-right:auto}
+.footer-top{align-items:start}
+.footer-top>div a,.menu-contact>a,.contact-aside>a{overflow-wrap:anywhere}
+.footer-nav{gap:25px 35px}
+.footer-bottom{flex-wrap:wrap}
+.footer-bottom>div{flex-wrap:wrap}
+.filters{gap:15px 30px}
+.gallery-item>span{gap:15px;line-height:1.5}
+.lightbox-stage{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lightbox-stage img{grid-column:1/-1;grid-row:1;width:auto;max-width:100%;max-height:65svh;justify-self:center}
+.lightbox-stage button{display:flex;align-items:center;gap:12px;padding:7px;line-height:1.5}
+#photo-prev{justify-self:start;flex-direction:row-reverse}
+#photo-next{justify-self:end}
+.dialog-head{letter-spacing:.04em;gap:15px;line-height:1.5}
+.contact-layout{gap:60px;grid-template-columns:1fr 1.3fr}
+@media(max-width:1100px){
+ .header .brand small{font-size:19px;gap:5px}
+ .header .brand small i{display:none}
+ .golf-panel{width:50%;padding:35px}
+ .section-heading{align-items:flex-start;flex-direction:column}
+ .mosaic-footer{flex-direction:column;align-items:center;text-align:center}
+ .city-grid{grid-template-columns:1fr}
+ .city-card img{height:430px}
+}
+@media(max-width:700px){
+ .header,.page-home .header{height:205px;padding:24px 25px;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;align-content:start;gap:25px 12px}
+ .header .brand{grid-column:1/-1;grid-row:1;justify-self:center}
+ .wordmark-villa{font-size:18px;margin-bottom:7px}
+ .wordmark-name{font-size:34px}
+ .header .brand small{font-size:19px;margin-top:12px;line-height:1.5}
+ .header .menu-toggle{grid-column:1;grid-row:2;align-self:center}
+ .header .menu-toggle b{display:none}
+ .header .header-cta{grid-column:2;grid-row:2;padding:10px 14px;gap:15px;white-space:nowrap}
+ .header .header-cta span{display:inline-flex}
+ .header #navigation{padding:205px 25px 35px}
+ .header #navigation>a{gap:14px;line-height:1.5}
+ .menu-eyebrow{margin-bottom:15px;letter-spacing:.05em}
+ .menu-contact{padding-top:28px}
+ .page-home .hero{min-height:660px}
+ .page-home .hero-content{top:51%;transform:translateY(-20%);padding:0 25px}
+ .page-home .hero-content .eyebrow{letter-spacing:.06em;max-width:350px;margin-left:auto;margin-right:auto}
+ .page-home .hero-content .glass{padding:16px 18px;gap:15px;letter-spacing:.01em}
+ .page-home .hero h1{font-size:clamp(35px,9.2vw,54px)}
+ .villa-facts{grid-template-columns:1fr 1fr;padding:0}
+ .villa-facts>div{padding:25px 8px}
+ .villa-facts>div:nth-child(2){border-right:0}
+ .villa-facts>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .villa-facts dt{letter-spacing:0}
+ .villa-description>.text-link{gap:15px}
+ .villa-mosaic{grid-auto-rows:270px}
+ .mosaic-label{padding:20px 12px 50px}
+ .mosaic-label>span{letter-spacing:0;line-height:1.5}
+ .mosaic-arrow{width:34px;height:34px;bottom:12px;right:12px}
+ .golf-feature{min-height:0}
+ .golf-feature>img{height:360px}
+ .golf-panel{width:auto;margin:-40px 20px 0;padding:30px;position:relative;right:auto}
+ .comfort ul{grid-template-columns:1fr}
+ .footer-top .brand{gap:10px;align-items:flex-start}
+ .footer-top .brand small{letter-spacing:.03em;line-height:1.5}
+ .footer-top .brand .sun{width:35px;flex:none}
+ .footer-nav .text-link{gap:15px}
+ .contact-layout{grid-template-columns:1fr;gap:45px}
+ .contact-reservation>.button{padding:17px;gap:14px}
+ .contact-reservation>.text-link{gap:15px}
+ .dialog-head span{max-width:calc(100% - 45px)}
+ .lightbox-stage{gap:10px}
+ .lightbox-stage button{gap:8px;padding:4px 0}
+}
+@media(prefers-reduced-motion:reduce){.golf-ball{transition:none}a:hover .golf-ball,button:hover .golf-ball{transform:none}}

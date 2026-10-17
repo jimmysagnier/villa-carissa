@@ -18,23 +18,20 @@
    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
   }
  });
- const hero=$('#hero-video'), motion=$('#motion-toggle'), reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const hero=$('#hero-video'), reduced=matchMedia('(prefers-reduced-motion: reduce)');
  if(hero){
-  const update=()=>{motion.textContent=hero.paused?'▷':'Ⅱ';motion.setAttribute('aria-label',hero.paused?'Lire le montage':'Mettre le montage en pause')};
-  hero.addEventListener('playing',()=>{hero.classList.add('is-playing');update()});hero.addEventListener('pause',update);
-  let userPaused=false, inView=true;
+  hero.addEventListener('playing',()=>hero.classList.add('is-playing'));
+  let inView=true;
   const mobile=matchMedia('(max-width: 600px)');
-  const canAutoPlay=()=>!userPaused&&!reduced.matches&&inView&&!document.hidden&&!$('dialog[open]');
-  const syncPlayback=()=>{if(canAutoPlay())hero.play().catch(update);else hero.pause()};
+  const canAutoPlay=()=>!reduced.matches&&inView&&!document.hidden&&!$('dialog[open]');
+  const syncPlayback=()=>{if(canAutoPlay())hero.play().catch(()=>{});else hero.pause()};
   const loadHero=()=>{
-   motion.hidden=reduced.matches;
    if(reduced.matches){hero.pause();return}
    const src=mobile.matches?hero.dataset.mobileSrc:hero.dataset.desktopSrc;
    if(hero.getAttribute('src')!==src){hero.classList.remove('is-playing');hero.src=src;hero.muted=true;hero.load()}
    syncPlayback();
   };
-  hero.addEventListener('error',()=>{hero.classList.remove('is-playing');motion.hidden=true});
-  motion.addEventListener('click',()=>{userPaused=!hero.paused;syncPlayback()});
+  hero.addEventListener('error',()=>{hero.classList.remove('is-playing')});
   reduced.addEventListener('change',loadHero);mobile.addEventListener('change',loadHero);
   document.addEventListener('visibilitychange',syncPlayback);
   new IntersectionObserver(([entry])=>{inView=entry.isIntersecting;syncPlayback()},{threshold:.1}).observe(hero);

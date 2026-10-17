@@ -1,0 +1,10 @@
+---
+interface Props { name: 'area' | 'bed' | 'bath' | 'guests' }
+const { name } = Astro.props;
+---
+<svg class="villa-fact-icon" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  {name === 'area' && <><path d="M7 18V7h11m12 0h11v11M7 30v11h11m12 0h11V30M15 33l18-18m-9 0h9v9m-18 0v9h9" /></>}
+  {name === 'bed' && <><path d="M6 37V14a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v23M6 32h36M4 25h40v12M9 37v3m30-3v3" /><rect x="10" y="16" width="12" height="9" rx="2"/><rect x="26" y="16" width="12" height="9" rx="2"/></>}
+  {name === 'bath' && <><path d="M5 25h38M8 25v5a11 11 0 0 0 11 11h10a11 11 0 0 0 11-11v-5M14 40l-2 4m22-4 2 4M11 25V10a5 5 0 0 1 10 0v3m-5 1h10M18 18v2m6-2v2" /></>}
+  {name === 'guests' && <><circle cx="19" cy="15" r="7"/><path d="M5 40v-4a14 14 0 0 1 28 0v4H5M32 9a7 7 0 0 1 0 13m5 5a12 12 0 0 1 7 11v2h-6" /></>}
+</svg>

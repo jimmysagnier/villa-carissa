@@ -1,3 +1,7 @@
+---
+import VillaIcon from './VillaIcon.astro';
+import GolfBall from './GolfBall.astro';
+---
 <section class="villa-description" id="la-villa" aria-labelledby="villa-title">
   <span class="eyebrow">BIENVENUE À VILLA CARISSA</span>
   <h2 id="villa-title">Une maison de famille<br><em>au cœur de Samanah.</em></h2>
@@ -7,11 +11,11 @@
     <p>Le salon avec cheminée, la salle à manger et la cuisine prolongent les moments partagés à l’intérieur. Dehors, les terrasses couvertes et découvertes, le jardin paysager sans vis-à-vis et la piscine privée composent le décor de vos journées.</p>
   </div>
   <dl class="villa-facts">
-    <div><dt>LA MAISON</dt><dd>170 <small>m²</small></dd></div>
-    <div><dt>CHAMBRES</dt><dd>4</dd></div>
-    <div><dt>SALLES DE BAIN</dt><dd>4</dd></div>
-    <div><dt>VOYAGEURS</dt><dd>8</dd></div>
+    <div><VillaIcon name="area" /><dt>Surface</dt><dd>170 m²</dd></div>
+    <div><VillaIcon name="bed" /><dt>Chambres</dt><dd>4</dd></div>
+    <div><VillaIcon name="bath" /><dt>Salles de bain</dt><dd>4</dd></div>
+    <div><VillaIcon name="guests" /><dt>Voyageurs</dt><dd>8</dd></div>
   </dl>
   <p class="villa-location">À l’écart du centre de Marrakech, la villa se découvre plus facilement avec une voiture pour vos sorties et vos parcours de golf.</p>
-  <a class="text-link" href="#espaces">Entrez, découvrez les lieux <span aria-hidden="true">↓</span></a>
+  <a class="text-link" href="#espaces">Entrez, découvrez les lieux <span aria-hidden="true"><GolfBall /></span></a>
 </section>
