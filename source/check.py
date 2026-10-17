@@ -13,13 +13,13 @@ class Page(HTMLParser):
         a=dict(attrs)
         if a.get('id'):self.ids.add(a['id'])
         if tag=='h1':self.h1+=1
-        for k in ['src','href','poster']:
+        for k in ['src','href','poster','data-desktop-src','data-mobile-src']:
             if k in a:self.links.append(a[k])
 
 files=list(dist.rglob('*.html'))
 for file in files:
     p=Page();p.feed(file.read_text())
-    if 'http-equiv="refresh"' not in file.read_text() and p.h1!=1:errors.append(f'{file}: expected one H1, got {p.h1}')
+    if 'http-equiv="refresh"' not in file.read_text().lower() and p.h1!=1:errors.append(f'{file}: expected one H1, got {p.h1}')
     for href in p.links:
         u=urlsplit(href)
         if u.scheme or u.netloc or href.startswith('#'):continue
@@ -29,6 +29,7 @@ legacy=json.loads((root/'source/legacy/pages.json').read_text())
 for p in legacy:
     path=urlsplit(p['link']).path.lstrip('/')
     if not (dist/path/'index.html').exists():errors.append('Legacy route lost: '+path)
-if not (dist/'assets/villa-carissa-film.mp4').stat().st_size>100000:errors.append('Film missing')
+for name in ['villa-carissa-film.mp4','villa-carissa-mobile.mp4','villa-poster.webp','villa-poster-mobile.webp']:
+    if not (dist/'assets'/name).is_file() or not (dist/'assets'/name).stat().st_size>1000:errors.append('Media missing: '+name)
 if errors:raise SystemExit('\n'.join(errors))
 print(f'PASS: {len(files)} HTML documents, local links/assets, six original pages and video.')

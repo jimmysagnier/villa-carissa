@@ -4,3 +4,9 @@ node_modules/
 *.tar.gz
 source/film-build.log
 source/contact-sheet.jpg
+dist/
+.astro/
+.sites-runtime/
+source/film-frames/
+source/film-desktop.log
+source/film-mobile.log

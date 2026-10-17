@@ -1,0 +1,29 @@
+---
+interface Props { currentPage: string }
+const { currentPage } = Astro.props;
+const home = currentPage === 'home';
+const links = [
+  {key:'home', url:'/#la-villa', label:'La villa'},
+  {key:'gallery', url:'/toutes-les-photos/', label:'La galerie'},
+  {key:'golf', url:'/voyage-golfique-a-marrakech/', label:'Le golf de Samanah'},
+  {key:'city', url:'/location-de-villa-a-marrakech/', label:'Marrakech'},
+  {key:'contact', url:'/contact/', label:'Contact'},
+];
+---
+<a class="skip" href="#main">Aller au contenu</a>
+{!home && <div class="topline">UNE VILLA PRIVÉE · GOLF DE SAMANAH, MARRAKECH</div>}
+<header class:list={['header', {'hero-header':home}]}>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-controls="navigation" aria-expanded="false">
+    <span></span><span></span><span></span><b>MENU</b>
+  </button>
+  <a class="brand" href="/" aria-label="Villa Carissa, accueil">
+    <span class="wordmark"><span class="wordmark-villa">VILLA</span><span class="wordmark-name">CARISSA</span><small><i></i>SAMANAH · MARRAKECH<i></i></small></span>
+  </a>
+  <a class="button header-cta" href="/contact/">RÉSERVER <span aria-hidden="true">↗</span></a>
+  <button class="menu-scrim" aria-label="Fermer le menu" tabindex="-1" hidden></button>
+  <nav id="navigation" aria-label="Navigation principale" inert>
+    <span class="menu-eyebrow">BIENVENUE À LA VILLA CARISSA</span>
+    {links.map(({key,url,label},i)=><a href={url} aria-current={currentPage===key?'page':undefined}><span class="nav-number">0{i+1}</span>{label}<span class="nav-arrow" aria-hidden="true">↗</span></a>)}
+    <div class="menu-contact"><span>UNE QUESTION SUR VOTRE SÉJOUR ?</span><a href="mailto:reservation@villacarissa-samanah.com">reservation@villacarissa-samanah.com</a></div>
+  </nav>
+</header>

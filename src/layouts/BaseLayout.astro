@@ -1,0 +1,40 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Dialogs from '../components/Dialogs.astro';
+import '../styles/global.css';
+import '../styles/hero.css';
+
+interface Props {
+  title: string;
+  description: string;
+  currentPage: string;
+}
+const { title, description, currentPage } = Astro.props;
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#292d25" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL('/assets/villa-poster.webp', Astro.site).href} />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/assets/font-1.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/assets/fonts.css" />
+  </head>
+  <body class={`page-${currentPage}`}>
+    <Header currentPage={currentPage} />
+    <main id="main"><slot /></main>
+    <Footer />
+    <Dialogs />
+    <script>
+      import '../scripts/app.js';
+    </script>
+  </body>
+</html>

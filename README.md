@@ -1,16 +1,21 @@
 # Villa Carissa
 
-Première refonte premium, indépendante de WordPress. Site statique en HTML, CSS et JavaScript, sans dépendance applicative. Les photos et polices sont servies localement.
+Site de la Villa Carissa, développé avec **Astro 7.4.0** (dernière version stable du registre npm vérifiée lors de cette refonte). Rendu statique, sans dépendance à WordPress. Les photos, vidéos et polices sont servies localement.
 
 ## Développer
 
 ```sh
-npm run build
-npm run check
+npm ci
 npm run dev
+npm run check
+npm run build
+npm run check:links
+npm run preview
 ```
 
-L’aperçu se trouve sur http://localhost:4173. Le code de génération des pages est dans `source/build.py`, les styles et interactions dans `dist/assets/`. Le dossier `dist/` est directement déployable sur un hébergement statique. Python 3 est requis pour les scripts locaux ; aucune exécution Python n’est nécessaire sur l’hébergement.
+Node.js >= 22.22.0 est requis. L’aperçu se trouve sur http://127.0.0.1:4173. Les routes sont dans `src/pages/`, les composants partagés dans `src/components/`, la structure HTML dans `src/layouts/BaseLayout.astro`, les styles dans `src/styles/` et les interactions dans `src/scripts/app.js`. Les médias sont dans `public/assets/`. Le dossier généré `dist/` est directement déployable sur un hébergement statique et ne doit pas être édité. Python 3 sert uniquement à la vérification des liens et à la production des vidéos ; il n’intervient plus dans la construction du site.
+
+Le hero occupe 100 % de la hauteur visible du navigateur. Logo centré, menu latéral et réservation sont superposés aux images. La composition reprend les principes du hero du Palais Les Orchidées sans reprendre ses médias ni sa classification hôtelière.
 
 ## Pages préservées
 
@@ -30,7 +35,22 @@ Les anciennes ancres de galerie `#salon`, `#chambre` et `#exterieur` activent le
 
 Les 44 médias d’origine et les exports WordPress (pages, articles, médiathèque, sitemap) sont archivés dans `source/legacy/`. La galerie présente les 15 photographies distinctes des espaces de la villa ; les autres photographies de voyage et de golf illustrent les pages correspondantes. Les portraits de démonstration de l’ancien thème ne sont pas utilisés.
 
-Le hero est une vidéo MP4 de 21,8 secondes, montée à partir de cinq photographies réelles de la villa, avec zooms lents et fondus. Il s’agit d’un montage photo, pas d’une visite filmée. Une image de remplacement est toujours présente ; le mouvement automatique est désactivé lorsque le navigateur demande une réduction des animations. Le fichier `source/make-film.py` reproduit le montage avec Pillow et imageio-ffmpeg installés localement.
+Deux vidéos de 25 secondes sont montées directement depuis les cinq JPEG originaux de la villa, sans recompression WebP intermédiaire :
+
+- `villa-carissa-film.mp4` : 1920 × 1080, 30 images/s, H.264 CRF 18.
+- `villa-carissa-mobile.mp4` : 720 × 1280, 30 images/s, cadrages verticaux dédiés, H.264 CRF 19.
+
+Les zooms sont plus légers, les fondus durent une seconde, et la dernière transition revient au même point de la première photo pour former une boucle continue. Le calcul sur un canevas intermédiaire de plus haute résolution réduit les pas de pixels dans les mouvements lents. Les affiches WebP sont extraites de la première image exacte de chaque vidéo pour éviter un changement de cadrage au démarrage. Les MP4 ont leur index en tête pour commencer la lecture avant le téléchargement complet.
+
+**Limite réelle :** les JPEG d’origine mesurent 1403 × 937 pixels. Le Full HD est un agrandissement, pas une prise de vue native en 1080p ou 4K. Le montage ne crée aucun détail architectural et reste un montage photo, pas une visite filmée.
+
+Le mobile ne charge que son propre fichier. Une image de remplacement est toujours présente et le chargement vidéo est différé jusqu’au script de lecture. Aucune vidéo de fond n’est chargée si la préférence de réduction des animations est active. La lecture s’interrompt lorsque le hero sort de l’écran ou que l’onglet passe en arrière-plan. Le bouton de pause reste disponible. Le film dans la fenêtre de lecture utilise la version horizontale Full HD.
+
+Pour reconstruire les films (Pillow disponible dans l’interpréteur et imageio-ffmpeg dans `.venv`) :
+
+```sh
+python3 source/make-film.py
+```
 
 ## Demandes de séjour
 

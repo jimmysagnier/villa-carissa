@@ -2,9 +2,15 @@
   "name": "villa-carissa",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=22.22.0" },
   "scripts": {
-    "build": "python3 source/build.py",
-    "dev": "python3 -m http.server 4173 --directory dist",
-    "check": "python3 source/check.py"
-  }
+    "dev": "astro dev --host 127.0.0.1 --port 4173",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4173",
+    "check": "astro check",
+    "check:links": "python3 source/check.py"
+  },
+  "dependencies": { "astro": "7.4.0" },
+  "devDependencies": { "@astrojs/check": "0.9.10", "typescript": "6.0.3" }
 }
