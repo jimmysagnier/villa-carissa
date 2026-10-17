@@ -1,5 +1,5 @@
 ---
-import GolfBall from '../../components/GolfBall.astro';
+import ExploreIcon from '../../components/ExploreIcon.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Photo from '../../components/Photo.astro';
 import photos from '../../data/photos.json';
@@ -30,7 +30,7 @@ const orderedPhotos = order.map(id=>photos.find(p=>p.id===id)!);
     <div class="gallery-grid">
       {orderedPhotos.map(photo=><button class="gallery-item" data-category={photo.group} data-src={photo.src} data-caption={photo.caption} aria-label={`Agrandir : ${photo.caption}`}>
         <Photo id={photo.id} />
-        <span>{photo.caption}<b aria-hidden="true"><GolfBall /></b></span>
+        <span>{photo.caption}<b aria-hidden="true"><ExploreIcon /></b></span>
       </button>)}
     </div>
     <p class="gallery-note">Photographies de la villa provenant de son annonce Airbnb.</p>

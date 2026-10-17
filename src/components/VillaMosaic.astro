@@ -1,5 +1,6 @@
 ---
 import GolfBall from './GolfBall.astro';
+import ExploreIcon from './ExploreIcon.astro';
 import Photo from './Photo.astro';
 const tiles = [
   {key:'dormir',title:'Dormir',subtitle:'QUATRE CHAMBRES, QUATRE SALLES DE BAIN',photo:17,hash:'chambre'},
@@ -17,7 +18,7 @@ const tiles = [
       <Photo id={tile.photo} sizes={tile.key==='dormir'?'(max-width: 600px) 100vw, 35vw':'(max-width: 600px) 50vw, 40vw'} />
       <span class="mosaic-shade"></span>
       <div class="mosaic-label"><h3>{tile.title}</h3><span>{tile.subtitle}</span></div>
-      <span class="mosaic-arrow" aria-hidden="true"><GolfBall /></span>
+      <span class="mosaic-action" aria-hidden="true"><ExploreIcon /></span>
     </a>)}
   </div>
   <div class="mosaic-footer"><p>De la maison au jardin, une visite à votre rythme.</p><a href="/toutes-les-photos/" class="text-link">Toutes les photos <span aria-hidden="true"><GolfBall /></span></a></div>

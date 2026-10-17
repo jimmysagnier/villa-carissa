@@ -21,15 +21,15 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
 .villa-facts .villa-fact-icon{order:1}
 .villa-location{max-width:800px}
 .mosaic-label>span{letter-spacing:.035em;line-height:1.5}
-.mosaic-arrow{width:38px;height:38px}
-.mosaic-arrow .golf-ball{width:25px;height:25px}
+.mosaic-action{width:38px;height:38px}
+.mosaic-action .image-cta-icon{width:28px;height:28px}
 .mosaic-footer{align-items:flex-start}
 .mosaic-footer .text-link{flex:none}
 .golf-panel{width:43%;padding:45px}
 .golf-feature{min-height:750px}
 .golf-feature>img{height:650px}
 .section-heading p br{display:none}
-.city-card h3 .golf-ball{margin-top:3px}
+.city-card h3 .image-cta-icon{margin-top:3px}
 .review-quotes blockquote{font-family:var(--sans);font-style:normal}
 .review-source{max-width:850px;margin-left:auto;margin-right:auto}
 .footer-top{align-items:start}
@@ -83,7 +83,7 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
  .villa-mosaic{grid-auto-rows:270px}
  .mosaic-label{padding:20px 12px 50px}
  .mosaic-label>span{letter-spacing:0;line-height:1.5}
- .mosaic-arrow{width:34px;height:34px;bottom:12px;right:12px}
+ .mosaic-action{width:34px;height:34px;bottom:12px;right:12px}
  .golf-feature{min-height:0}
  .golf-feature>img{height:360px}
  .golf-panel{width:auto;margin:-40px 20px 0;padding:30px;position:relative;right:auto}
@@ -100,3 +100,11 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
  .lightbox-stage button{gap:8px;padding:4px 0}
 }
 @media(prefers-reduced-motion:reduce){.golf-ball{transition:none}a:hover .golf-ball,button:hover .golf-ball{transform:none}}
+
+/* Quiet, fine-line markers reserved for clickable photographs. */
+.image-cta-icon{display:inline-block;flex:none;vertical-align:middle;width:28px;height:28px;transition:transform .4s ease,opacity .4s ease}
+.mosaic-action{border:0;border-radius:0;background:none;opacity:.85}
+.mosaic-tile:hover .mosaic-action{background:none}
+.mosaic-tile:hover .image-cta-icon,.city-card:hover .image-cta-icon,.gallery-item:hover .image-cta-icon{transform:scale(1.12);opacity:1}
+.gallery-item .image-cta-icon{width:24px;height:24px}
+@media(prefers-reduced-motion:reduce){.image-cta-icon{transition:none}.mosaic-tile:hover .image-cta-icon,.city-card:hover .image-cta-icon,.gallery-item:hover .image-cta-icon{transform:none}}
