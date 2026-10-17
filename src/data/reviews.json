@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-17",
+  "sourceUrl": "https://www.airbnb.fr/rooms/14479193/reviews",
+  "format": "Sélection de résumés éditoriaux, sans citation littérale ni synchronisation automatique.",
+  "reviews": [
+    {"sourceId":"1758579221266216528","name":"Soufian","date":"2026-08","displayDate":"Août 2026","rating":5,"summary":"Un séjour familial reposant, avec de l’espace, une piscine appréciée et une équipe disponible."},
+    {"sourceId":"1741887406081784041","name":"Youssef","date":"2026-07","displayDate":"Juillet 2026","rating":5,"summary":"La propreté, les chambres et la piscine ont plu à toute la famille, notamment aux enfants."},
+    {"sourceId":"1732603955079800250","name":"Mohammed","date":"2026-07","displayDate":"Juillet 2026","rating":5,"summary":"Maria s’est montrée attentive et réactive. La famille a particulièrement profité du barbecue et de la piscine."},
+    {"sourceId":"1719632079237015608","name":"Clémentine","date":"2026-06","displayDate":"Juin 2026","rating":5,"summary":"Une maison restée fraîche et un jardin apprécié, malgré des différences avec certaines photos de l’annonce."},
+    {"sourceId":"1584786232953604066","name":"Lila","date":"2025-12","displayDate":"Décembre 2025","rating":4,"summary":"Un séjour réussi, accompagné par la réactivité de Maria tout au long des vacances."},
+    {"sourceId":"1534107941515560558","name":"Mapha","date":"2025-10","displayDate":"Octobre 2025","rating":5,"summary":"Une résidence paisible et sécurisée. Une voiture est conseillée ; une piscine chauffée aurait été appréciée."},
+    {"sourceId":"1543529962595367059","name":"Yanis","date":"2025-10","displayDate":"Octobre 2025","rating":5,"summary":"Après cinq séjours, Yanis se sent chez lui et remercie Willy, Maria et Nora pour leur accueil."},
+    {"sourceId":"1492053736274435350","name":"Esma","date":"2025-08","displayDate":"Août 2025","rating":5,"summary":"Un cadre intime et reposant, avec un hôte réactif face à un souci de climatisation."},
+    {"sourceId":"1454380209004868838","name":"Soufiane","date":"2025-06","displayDate":"Juin 2025","rating":4,"summary":"Le calme de l’emplacement a contribué à un très beau séjour."},
+    {"sourceId":"1748529855312802114","name":"Salma","date":"2026-08","displayDate":"Août 2026","rating":4,"summary":"Un agréable séjour familial. Voiture à prévoir et quelques ustensiles de cuisine manquants signalés."}
+  ]
+}

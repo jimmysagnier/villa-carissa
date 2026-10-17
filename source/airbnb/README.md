@@ -23,7 +23,9 @@ Le nouveau hero est réalisé à partir des photos 30, 31, 06, 17 et 33, avec re
 
 ## Avis
 
-Note constatée : 4,53/5, 113 commentaires. La date du relevé accompagne la note sur le site. Deux courts extraits sont attribués à Soufian (août 2026) et Youssef (juillet 2026). Le lien permet de lire l’ensemble des avis sur Airbnb. Les avis ne sont pas synchronisés en direct.
+Note constatée : 4,53/5, 113 commentaires. Relecture publique le 17 octobre 2026 : dix avis ont été sélectionnés dans la fenêtre des commentaires Airbnb, avec prénom, mois affiché par Airbnb, note et identifiant public de l’avis. `src/data/reviews.json` conserve ces références et les résumés éditoriaux affichés.
+
+Les textes sont des résumés, signalés comme tels, et ne sont pas présentés entre guillemets. Les réserves mentionnées dans les avis retenus (photos, piscine chauffée, climatisation, voiture, ustensiles) restent visibles dans les résumés concernés. Les dix avis comprennent des notes de 4/5 et 5/5 ; ils constituent une sélection et ne remplacent pas la note globale. Il n’y a pas de synchronisation automatique. Le lien public permet de lire tous les commentaires originaux.
 
 ## Réservations et calendrier
 

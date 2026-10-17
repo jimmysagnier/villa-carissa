@@ -1,12 +1,25 @@
 ---
 import GolfBall from './GolfBall.astro';
 import { AIRBNB_REVIEWS_URL, reviewSnapshot } from '../data/villa';
+import { reviews } from '../data/reviews.json';
 ---
-<section class="guest-reviews" aria-labelledby="reviews-title">
+<section class="guest-reviews" id="avis" aria-labelledby="reviews-title">
   <div class="review-heading"><span class="eyebrow">LEURS SÉJOURS À CARISSA</span><h2 id="reviews-title">Quelques mots<br><em>de nos voyageurs.</em></h2></div>
-  <div class="review-quotes">
-    <figure><span class="review-quote-mark" aria-hidden="true">“</span><blockquote>Le calme est vraiment l’un des grands atouts du lieu.</blockquote><figcaption>Soufian <span>Août 2026 · Extrait d’un avis Airbnb</span></figcaption></figure>
-    <figure><span class="review-quote-mark" aria-hidden="true">“</span><blockquote>Nous avons passé un très bon séjour en famille.</blockquote><figcaption>Youssef <span>Juillet 2026 · Extrait d’un avis Airbnb</span></figcaption></figure>
+  <p class="reviews-intro">Une sélection de {reviews.length} avis Airbnb, résumés pour cette page.</p>
+  <div class="reviews-track" id="reviews-track" role="region" aria-label="Les 10 avis de voyageurs" tabindex="0">
+    {reviews.map(review => <article class="review-card" aria-label={`Avis de ${review.name}, ${review.displayDate}, ${review.rating} sur 5`}>
+      <header class="review-card-head"><strong>{review.name}</strong><time datetime={review.date}>{review.displayDate}</time></header>
+      <div class="review-rating" aria-label={`${review.rating} étoiles sur 5`}>
+        <span class="review-stars" aria-hidden="true">{Array.from({length:5},(_,i)=><svg viewBox="0 0 20 20" width="17" height="17" class:list={['review-star',{'is-filled':i<review.rating}]}><path d="m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4L10 14.4l-4.8 2.5.9-5.4L2.2 7.7l5.4-.8Z" /></svg>)}</span>
+        <span aria-hidden="true">{review.rating}/5</span>
+      </div>
+      <p class="review-summary">{review.summary}</p>
+    </article>)}
+  </div>
+  <div class="reviews-controls" hidden>
+    <button class="text-link" data-reviews-prev aria-label="Afficher les avis précédents" aria-controls="reviews-track" disabled>Précédents <GolfBall /></button>
+    <span class="reviews-position" role="status" aria-live="polite" aria-atomic="true">Avis 1–2 sur {reviews.length}</span>
+    <button class="text-link" data-reviews-next aria-label="Afficher les avis suivants" aria-controls="reviews-track">Suivants <GolfBall /></button>
   </div>
   <a class="text-link" href={AIRBNB_REVIEWS_URL} target="_blank" rel="noopener noreferrer">Lire tous les avis sur Airbnb <span aria-hidden="true"><GolfBall /></span></a>
   <p class="review-source">Note globale {reviewSnapshot.rating}/5 · {reviewSnapshot.count} avis · Relevé du {reviewSnapshot.displayDate}</p>

@@ -108,3 +108,33 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
 .mosaic-tile:hover .image-cta-icon,.city-card:hover .image-cta-icon,.gallery-item:hover .image-cta-icon{transform:scale(1.12);opacity:1}
 .gallery-item .image-cta-icon{width:24px;height:24px}
 @media(prefers-reduced-motion:reduce){.image-cta-icon{transition:none}.mosaic-tile:hover .image-cta-icon,.city-card:hover .image-cta-icon,.gallery-item:hover .image-cta-icon{transform:none}}
+
+/* A manually curated selection: no autoplay and native touch/keyboard scrolling. */
+.reviews-intro{font-size:19px;line-height:1.8;max-width:780px;margin:-16px auto 36px}
+.reviews-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/2);gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#a59372 var(--cream);padding-bottom:20px;text-align:left}
+.reviews-track:focus-visible{outline:2px solid #a2683f;outline-offset:5px}
+.review-card{scroll-snap-align:start;border:1px solid var(--line);background:#efeee54d;padding:32px;min-width:0}
+.review-card-head{display:flex;flex-direction:column;gap:4px}
+.review-card-head strong,.review-card-head time,.review-rating,.review-summary{font-size:19px}
+.review-card-head strong{font-weight:600}
+.review-card-head time{color:var(--muted)}
+.review-rating{display:flex;align-items:center;gap:14px;margin:20px 0;color:#86734e}
+.review-stars{display:inline-flex;gap:4px;align-items:center}
+.review-star{fill:none;stroke:currentColor;stroke-width:1.1}
+.review-star.is-filled{fill:currentColor}
+.review-summary{line-height:1.8;color:var(--ink)}
+.reviews-controls{display:flex;align-items:center;justify-content:space-between;gap:22px;margin:20px 0 38px}
+.reviews-controls[hidden]{display:none}
+.reviews-controls button{font-size:19px;padding:8px 0;gap:14px}
+.reviews-controls button:disabled{opacity:.35}
+.reviews-position{font-size:19px;color:var(--muted)}
+.guest-reviews>.text-link{margin-top:24px}
+@media(max-width:700px){
+ .reviews-track{grid-auto-columns:100%;gap:18px}
+ .review-card{padding:25px;min-height:335px}
+ .reviews-intro{margin-top:-12px;margin-bottom:28px}
+ .reviews-controls{flex-wrap:wrap;gap:12px 20px}
+ .reviews-position{order:3;flex-basis:100%}
+ .reviews-controls button{gap:10px}
+ .review-source{max-width:none}
+}

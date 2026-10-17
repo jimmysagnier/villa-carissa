@@ -51,4 +51,28 @@
  lightbox.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(index-1)}if(e.key==='ArrowRight'){e.preventDefault();showPhoto(index+1)}});
  let startX=0;lightbox.addEventListener('touchstart',e=>startX=e.changedTouches[0].screenX,{passive:true});lightbox.addEventListener('touchend',e=>{const d=e.changedTouches[0].screenX-startX;if(Math.abs(d)>60)showPhoto(index+(d<0?1:-1))},{passive:true});
 
+ const reviewTrack=$('#reviews-track');
+ if(reviewTrack){
+  const cards=$$('.review-card',reviewTrack), controls=$('.reviews-controls'), previous=$('[data-reviews-prev]'), next=$('[data-reviews-next]'), position=$('.reviews-position');
+  const step=()=>cards.length>1?cards[1].offsetLeft-cards[0].offsetLeft:reviewTrack.clientWidth;
+  const perPage=()=>Math.max(1,Math.round(reviewTrack.clientWidth/step()));
+  let frame;
+  const updateReviews=()=>{
+   const first=Math.min(cards.length-1,Math.max(0,Math.round(reviewTrack.scrollLeft/step())));
+   const last=Math.min(cards.length,first+perPage());
+   previous.disabled=reviewTrack.scrollLeft<2;
+   next.disabled=reviewTrack.scrollLeft>=reviewTrack.scrollWidth-reviewTrack.clientWidth-2;
+   position.textContent='Avis '+(first+1)+(last>first+1?'–'+last:'')+' sur '+cards.length;
+  };
+  function moveReviews(direction){
+   const amount=step()*perPage();
+   reviewTrack.scrollBy({left:direction*amount,behavior:reduced.matches?'instant':'smooth'});
+  }
+  controls.hidden=false;
+  previous.addEventListener('click',()=>moveReviews(-1));next.addEventListener('click',()=>moveReviews(1));
+  reviewTrack.addEventListener('scroll',()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(updateReviews)},{passive:true});
+  new ResizeObserver(updateReviews).observe(reviewTrack);
+  updateReviews();
+ }
+
 })();
