@@ -1,0 +1,10 @@
+{
+  "name": "villa-carissa",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "python3 source/build.py",
+    "dev": "python3 -m http.server 4173 --directory dist",
+    "check": "python3 source/check.py"
+  }
+}
