@@ -1,0 +1,94 @@
+{
+  "description": "Référence documentaire du rendu validé le 2026-10-18. Non importée par le build ; les CSS restent la source de vérité.",
+  "colors": {
+    "paper": "#f7f6f0",
+    "cream": "#efeee5",
+    "ink": "#303c30",
+    "muted": "#606757",
+    "line": "#d9dccf",
+    "olive": "#646d47",
+    "bronzeText": "#78623e",
+    "bronzeBrand": "#806039",
+    "footer": "#eeeee5",
+    "focusLightSurface": "#a2683f",
+    "focusDarkSurface": "#f1d69c"
+  },
+  "typography": {
+    "headingFamily": [
+      "Cormorant Garamond",
+      "Georgia",
+      "serif"
+    ],
+    "bodyFamily": [
+      "Manrope",
+      "sans-serif"
+    ],
+    "bodySize": "19px",
+    "bodyLineHeight": 1.8,
+    "headingWeight": 400,
+    "headingLineHeight": 1.04,
+    "headingLetterSpacing": "-0.035em",
+    "h2Default": "clamp(42px, 4.6vw, 70px)",
+    "h3Default": "32px",
+    "footerNavigation": "14px",
+    "footerMeta": "12px",
+    "contactH1": "clamp(28px, 3.2vw, 46px)",
+    "logoException": true
+  },
+  "layout": {
+    "sectionMaxWidth": "1340px",
+    "headerDesktopHeight": "112px",
+    "headerMobileHeight": "88px",
+    "headerMobileBreakpoint": "700px",
+    "homeHeroHeight": "100svh",
+    "mosaicDesktopColumns": 12,
+    "mosaicTabletColumns": 6,
+    "mosaicMobileColumns": 2,
+    "mosaicTabletBreakpoint": "1000px",
+    "mosaicMobileBreakpoint": "600px",
+    "localBreakpointsPx": [
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1050,
+      1100,
+      1200,
+      1600
+    ]
+  },
+  "controls": {
+    "buttonBorder": "1px",
+    "buttonRadius": "0",
+    "pauseHeroSize": "44px",
+    "focusWidth": "2px",
+    "focusOffset": "5px",
+    "classicCtaIcon": "GolfBall.astro",
+    "photoCtaIcon": "ExploreIcon.astro",
+    "footerCtaIcon": null
+  },
+  "media": {
+    "heroVideoMobileBreakpoint": "600px",
+    "golfCityPortraitBreakpoint": "700px",
+    "deferredPhotoRootMargin": "500px",
+    "videoDesktop": {
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 25,
+      "framesPerSecond": 30
+    },
+    "videoMobile": {
+      "width": 720,
+      "height": 1280,
+      "durationSeconds": 25,
+      "framesPerSecond": 30
+    }
+  },
+  "rules": [
+    "Texte courant 19px ; exceptions footer et signature graphique",
+    "Respecter prefers-reduced-motion",
+    "Conserver contraste, focus et pause vidéo",
+    "Pas de balle sur photos cliquables ni dans le footer"
+  ]
+}

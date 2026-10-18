@@ -28,4 +28,9 @@ Les manifestes JSON conservent les URL publiques et dimensions originales. Les o
 - Practice : `DSC_8864.JPG`, site Edmond Performance, 2500 × 1656.
 - Golfs voisins : photographies distinctes de l'ONMT, sauf Akenza provenant du site Al Maaden.
 
-Crédits et liens vers les propriétaires/provenances affichés sur la page. Aucune licence libre ni autorisation de republication n'a été confirmée ; aperçu actuellement propriétaire privé.
+Crédits et liens vers les propriétaires/provenances affichés sur la page. Aucune licence libre ni autorisation de republication n'a été confirmée ; aperçu du site actuellement privé.
+
+
+## État technique après review du 18 octobre
+
+Les héros possèdent aussi des variantes AVIF, dont des cadrages portrait. Le build utilise uniquement les fichiers locaux optimisés ; les originaux ignorés ne sont pas requis. Les droits et crédits ci-dessus restent applicables, indépendamment de la visibilité du dépôt de code.

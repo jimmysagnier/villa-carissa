@@ -4,6 +4,11 @@
 
 Sources de contenu : liens des lieux dans `src/data/marrakech-places.json`. Vérification auprès de l'ONMT, du CRT Marrakech-Safi et des sites des établissements. Ni tarifs, ni horaires, ni temps de trajet non confirmés. La Koutoubia est décrite depuis l'extérieur. Agafay est un désert de pierres. Essaouira est présentée comme une journée d'excursion, distincte de Marrakech. Aucun service de conciergerie ou accès gratuit n'est promis. Les réservations de la villa restent exclusivement sur Airbnb.
 
-Photographies : sources, auteurs, dimensions et licences dans `download-manifest.json`. Les photos Commons sous licences CC sont créditées avec lien vers leur page et leur licence dans le détail des crédits de la page. Redimensionnement/conversion WebP et cadrage responsive signalés. Les versions adaptées restent sous leur licence respective. Les six photographies de sites officiels (Jardin Secret, Ménara/CRT, YSL, Agafay/CRT, Ourika/CRT, Bains de Marrakech) ne sont pas présentées comme libres de droits ; aucune permission de republication n'a été confirmée. Le site conserve son audience propriétaire privée.
+Photographies : sources, auteurs, dimensions et licences dans `download-manifest.json`. Les photos Commons sous licences CC sont créditées avec lien vers leur page et leur licence dans le détail des crédits de la page. Redimensionnement/conversion WebP et cadrage responsive signalés. Les versions adaptées restent sous leur licence respective. Les six photographies de sites officiels (Jardin Secret, Ménara/CRT, YSL, Agafay/CRT, Ourika/CRT, Bains de Marrakech) ne sont pas présentées comme libres de droits ; aucune permission de republication n'a été confirmée. L’aperçu du site conserve son audience privée.
 
 Hero : Jemaa el-Fna au crépuscule, original 4096 × 3072, Herokk, CC BY-SA 4.0. Les photos représentent les lieux ; la salle du musée YSL n'est pas présentée comme une exposition actuelle. Photos des souks : lanternes de Marrakech, pas Fès. Aucun visuel généré par IA. Les originaux et les planches de sélection restent ignorés par Git ; variantes publiques sans agrandissement artificiel dans `public/assets/marrakech/`. Script reproductible `build-images.py` (Pillow).
+
+
+## État technique après review du 18 octobre
+
+Les héros possèdent aussi des variantes AVIF, dont des cadrages portrait. Le build utilise uniquement les fichiers locaux optimisés ; les originaux ignorés ne sont pas requis. Les droits et crédits ci-dessus restent applicables, indépendamment de la visibilité du dépôt de code.

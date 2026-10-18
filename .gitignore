@@ -18,3 +18,11 @@ source/golf-page/contact-sheet.jpg
 source/marrakech/originals/
 source/marrakech/*-candidates.json
 source/marrakech/*-sheet.jpg
+
+# Local secrets and generated tooling state
+.env
+.env.*
+!.env.example
+.wrangler/
+coverage/
+*.log

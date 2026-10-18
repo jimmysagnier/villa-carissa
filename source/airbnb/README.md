@@ -32,3 +32,8 @@ Les textes sont des résumés, signalés comme tels, et ne sont pas présentés 
 Les réservations, tarifs et paiements sont exclusivement gérés sur Airbnb. Aucun formulaire local ne collecte de dates ou de demandes de réservation.
 
 L’aide officielle indique qu’un lien iCal doit être exporté depuis le calendrier hôte : https://www.airbnb.fr/help/article/99. Ce lien privé n’est pas fourni dans l’annonce publique. Le choix validé par l’utilisateur est donc le bouton vers Airbnb, sans calendrier local ni synchronisation simulée.
+
+
+## État après review du 18 octobre
+
+Variantes supplémentaires de 480 pixels dans `public/assets/airbnb/`. Films optimisés après la génération initiale : environ 7,08 Mo desktop et 3,61 Mo mobile, toujours 25 secondes, 30 images/s, 1920 × 1080 et 720 × 1280. Posters AVIF et WebP ; fontes locales WOFF2. Les scripts de génération initiaux ne réappliquent pas automatiquement cette dernière passe d’encodage.

@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-18",
+  "sourceCommit": "49fa1e56bcdc2e3aef7cc51ad1738e72edbce031",
+  "tool": "Lighthouse 13.5.0",
+  "target": "Local production build, http://127.0.0.1:4173",
+  "profiles": "Default mobile; --preset=desktop",
+  "measurements": [
+    {
+      "page": "home",
+      "path": "/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1201.3427,
+        "largest-contentful-paint": 2552.01405,
+        "speed-index": 1201.3427,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0002519462261868209
+      }
+    },
+    {
+      "page": "home",
+      "path": "/",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 322.0488,
+        "largest-contentful-paint": 803.0732,
+        "speed-index": 322.0488,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 6.765782330794151e-05
+      }
+    },
+    {
+      "page": "gallery",
+      "path": "/toutes-les-photos/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1201.4426,
+        "largest-contentful-paint": 2702.1638999999996,
+        "speed-index": 1201.4426,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.001126592880455751
+      }
+    },
+    {
+      "page": "gallery",
+      "path": "/toutes-les-photos/",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 322.6133,
+        "largest-contentful-paint": 605.2266,
+        "speed-index": 322.6133,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0003194035840410939
+      }
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1051.1104,
+        "largest-contentful-paint": 1951.1104,
+        "speed-index": 1051.1104,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0002519462261868209
+      }
+    },
+    {
+      "page": "contact",
+      "path": "/contact/",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 282.1974,
+        "largest-contentful-paint": 402.1974,
+        "speed-index": 282.1974,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    },
+    {
+      "page": "legal",
+      "path": "/mentions-legales/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1201.7117,
+        "largest-contentful-paint": 2101.7117,
+        "speed-index": 1201.7117,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0006741894385925114
+      }
+    },
+    {
+      "page": "legal",
+      "path": "/mentions-legales/",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 321.9662,
+        "largest-contentful-paint": 441.9662,
+        "speed-index": 321.9662,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    },
+    {
+      "page": "golf",
+      "path": "/voyage-golfique-a-marrakech/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1201.6803,
+        "largest-contentful-paint": 2702.52045,
+        "speed-index": 1201.6803,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    },
+    {
+      "page": "golf",
+      "path": "/voyage-golfique-a-marrakech/",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 322.3457,
+        "largest-contentful-paint": 583.51855,
+        "speed-index": 322.3457,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 7.204907626302426e-05
+      }
+    },
+    {
+      "page": "marrakech",
+      "path": "/location-de-villa-a-marrakech/",
+      "profile": "mobile",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1202.8229,
+        "largest-contentful-paint": 3004.23435,
+        "speed-index": 1202.8229,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0002829396111542473
+      }
+    },
+    {
+      "page": "marrakech",
+      "path": "/location-de-villa-a-marrakech/",
+      "profile": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 321.7679,
+        "largest-contentful-paint": 602.65185,
+        "speed-index": 321.7679,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 7.269963225636985e-05
+      }
+    }
+  ]
+}

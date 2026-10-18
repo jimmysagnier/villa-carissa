@@ -1,74 +1,87 @@
-# Villa Carissa
+# Villa Carissa · Samanah, Marrakech
 
-Site de la Villa Carissa, développé avec **Astro 7.4.0** (dernière version stable du registre npm vérifiée lors de cette refonte). Rendu statique, sans dépendance à WordPress. Les photos, vidéos et polices sont servies localement.
+Site vitrine d’une villa privée à Marrakech, au cœur du domaine de Samanah. **Astro 7.4.0**, TypeScript, CSS et JavaScript natif, rendu entièrement statique. Aucun WordPress, CMS, serveur applicatif ou secret n’est nécessaire au développement et au build.
 
-## Développer
+Design et contenu validés au **18 octobre 2026**. Réservations exclusivement sur [Airbnb](https://www.airbnb.fr/rooms/14479193).
+
+## Reprendre le projet
+
+Prérequis : **Node.js 24.13.0** (version de référence dans `.nvmrc`), npm et Python 3 pour le contrôle des liens. La contrainte du projet est Node ≥ 22.22.0. Aucune variable d’environnement requise.
 
 ```sh
+git clone https://github.com/jimmysagnier/villa-carissa.git
+cd villa-carissa
+nvm use # si nvm est installé ; sinon utiliser directement Node 24.13.0
 npm ci
 npm run dev
-npm run check
-npm run build
-npm run check:links
-npm run preview
 ```
 
-Node.js >= 22.22.0 est requis. L’aperçu se trouve sur http://127.0.0.1:4173. Les routes sont dans `src/pages/`, les composants partagés dans `src/components/`, la structure HTML dans `src/layouts/BaseLayout.astro`, les styles dans `src/styles/` et les interactions dans `src/scripts/app.js`. Les médias sont dans `public/assets/`. Le dossier généré `dist/` est directement déployable sur un hébergement statique et ne doit pas être édité. Python 3 sert uniquement à la vérification des liens et à la production des vidéos ; il n’intervient plus dans la construction du site.
-
-Le hero occupe 100 % de la hauteur visible du navigateur. Logo centré, menu latéral et réservation sont superposés aux images. La composition reprend les principes du hero du Palais Les Orchidées sans reprendre ses médias ni sa classification hôtelière.
-
-## Pages préservées
-
-| Page d’origine | Adresse conservée |
-| --- | --- |
-| Accueil | `/` |
-| Toutes les photos | `/toutes-les-photos` |
-| Le golf de Samanah | `/voyage-golfique-a-marrakech` |
-| Que faire à Marrakech | `/location-de-villa-a-marrakech` |
-| Contact | `/contact` |
-| Mentions légales | `/mentions-legales` |
-| Archive blog liée depuis le pied de page, sans article d’origine | `/category/uncategorized` |
-
-Les anciennes ancres de galerie `#salon`, `#chambre` et `#exterieur` activent les filtres correspondants. Les liens historiques `/voyage-golfique-maroc` et `/villa-carissa-a-samanah` disposent d’une redirection HTML. Pour le domaine final, les convertir en redirections HTTP 301 avec la configuration de l’hébergeur.
-
-## Photos et montage
-
-Les médias et textes de l’ancien WordPress restent archivés dans `source/legacy/`. Le site présente désormais les **34 photographies de l’annonce Airbnb**, réparties par pièce. Les sources et dimensions figurent dans `src/data/photos.json`, l’audit dans `source/airbnb/README.md`. Les originaux sont conservés localement dans `source/airbnb/originals/` (ignoré par Git). Des WebP responsives de 800, 1600 et 2400 pixels maximum sont incluses dans `public/assets/airbnb/`.
-
-Deux vidéos de 25 secondes sont montées directement depuis cinq JPEG haute définition de l’annonce :
-
-- `villa-carissa-film.mp4` : 1920 × 1080, 30 images/s, H.264 CRF 20, débit plafonné à 6 Mbit/s.
-- `villa-carissa-mobile.mp4` : 720 × 1280, 30 images/s, cadrages verticaux dédiés, H.264 CRF 21, débit plafonné à 2,5 Mbit/s.
-
-Les sources de ces plans dépassent 5 000 pixels de large : le nouvel export Full HD est obtenu par réduction, contrairement au premier montage réalisé à partir des photos de 1 403 pixels de l’ancien site. Le film reste un montage photographique, sans détail architectural généré. Zooms lents, fondus d’une seconde et retour au premier plan assurent une boucle continue. Les affiches WebP sont extraites de la première image exacte de chaque film.
-
-Seul le fichier adapté au mobile ou à l’ordinateur est chargé. La préférence de réduction des animations empêche le chargement automatique. La lecture s’interrompt hors écran et dans les onglets en arrière-plan ; un bouton permet de la mettre en pause.
-
-Pour récupérer les originaux depuis les seules URL déjà relevées et reconstruire les vidéos (Pillow et imageio-ffmpeg requis) :
+Ouvrir [http://127.0.0.1:4173](http://127.0.0.1:4173). Depuis un clone existant : `git pull --ff-only`, puis `npm ci` si le lockfile a changé.
 
 ```sh
-python3 source/import-airbnb-photos.py
-python3 source/make-film.py
+npm run check       # Types et diagnostics Astro
+npm run build       # Produit dist/
+npm run check:links # Après build : routes, médias et liens locaux
+npm run preview     # Build de production sur le port 4173
 ```
 
-## Descriptif et mosaïque
+Ne pas lancer `dev` et `preview` simultanément sur le même port. Les photos, vidéos et polices nécessaires sont incluses ; aucun téléchargement de médias n’est nécessaire au build. Les originaux haute définition ignorés ne sont pas requis.
 
-Le hero est suivi du descriptif vérifié avec l’annonce, puis de six tuiles photo : Dormir, Extérieur, Salon, Piscine, À table et Bains. Chaque tuile ouvre la galerie filtrée. Les anciennes ancres restent accessibles ; de nouvelles catégories `#repas`, `#bain` et `#golf` complètent la visite.
+## Documentation
 
-Deux courts extraits d’avis récents, attribués et datés, remplacent l’ancien avis de 2019. La note de 4,53/5 et les 113 avis sont un relevé du 17 octobre 2026, indiqué comme tel, avec un lien vers l’ensemble des commentaires. Aucun avis n’est présenté comme synchronisé.
+| Document | Usage |
+| --- | --- |
+| [AGENTS.md](AGENTS.md) | Point d’entrée pour les autres IA et les développeurs |
+| [Design system](docs/DESIGN_SYSTEM.md) | Palette, typographie, mise en page, composants et états |
+| [Tokens](docs/design-tokens.json) | Référence structurée des valeurs actuelles |
+| [Style éditorial](docs/CONTENT_STYLE.md) | Ton, faits, textes imposés et décisions de contenu |
+| [Architecture et code](docs/ARCHITECTURE.md) | Fichiers, cascade CSS, interactions et données |
+| [Contribuer et vérifier](docs/CONTRIBUTING.md) | Processus de modification et contrôles |
+| [Déploiement futur](docs/DEPLOYMENT.md) | Préparation Cloudflare ; aucune intégration activée |
+| [État de la review](docs/REVIEW_2026-10-18.md) | Mesures, limites et améliorations restantes |
 
-## Réservation exclusivement sur Airbnb
+Pour une autre IA : commencer par `AGENTS.md`, puis lire le guide correspondant à la modification. Le dépôt suffit à reprendre le site sans retrouver l’historique de conversation.
 
-Tous les appels à réserver ouvrent `https://www.airbnb.fr/rooms/14479193`. Le formulaire de séjour et le choix local de dates ont été supprimés. La page Contact est conservée et renvoie aux disponibilités et à la messagerie hôte sur Airbnb.
+## Structure
 
-Le lien d’export iCal n’étant pas accessible depuis l’annonce publique, aucun calendrier local n’est affiché. Un éventuel affichage ultérieur nécessiterait le lien d’export du compte hôte et une synchronisation côté serveur ; même dans ce cas les tarifs, règles de séjour et réservations resteraient gérés par Airbnb.
+```text
+src/components/       Composants Astro et pictogrammes SVG
+src/data/             Photos, avis, golfs, lieux et constantes Airbnb
+src/layouts/          Document HTML commun et métadonnées
+src/pages/            Six pages principales et page 404
+src/scripts/app.js    Menu, médias, galerie et avis
+src/styles/           CSS existant et ajustements finaux
+public/assets/        Médias optimisés et polices locales
+source/               Provenance, archives WordPress et outils médias
+docs/                 Documentation de reprise et design system
+.github/workflows/    Validation uniquement, aucun déploiement
+```
 
-## À confirmer avant remplacement du site actuel
+## Pages et adresses
 
-- Vérifier les tarifs et conditions directement sur Airbnb. Aucune solution de réservation directe n’est prévue.
-- Actualité des coordonnées de contact conservées depuis le site original.
-- Mise à jour des mentions légales historiques de 2019, notamment éditeur, hébergeur et données personnelles.
-- Anciennes réductions sur les green fees et les Bains de Marrakech : archivées dans les exports, omises de l’interface car non confirmées.
-- Domaine définitif, canonicals, sitemap public et redirections HTTP. Le domaine WordPress actuel n’a pas été modifié.
+| Page | URL |
+| --- | --- |
+| Accueil | `/` |
+| Galerie | `/toutes-les-photos/` |
+| Golf | `/voyage-golfique-a-marrakech/` |
+| Que faire à Marrakech | `/location-de-villa-a-marrakech/` |
+| Contact | `/contact/` |
+| Mentions légales | `/mentions-legales/` |
 
-La prévisualisation Sites est privée. `dist/robots.txt` interdit l’indexation de cet aperçu : remplacer ce fichier et ajouter le sitemap lors de la migration sur le domaine public.
+Alias conservés dans Astro : `/voyage-golfique-maroc/` → Golf et `/villa-carissa-a-samanah/` → Accueil. L’archive vide **Blog & actualités** (`/category/uncategorized/`) a été supprimée à la demande du propriétaire.
+
+Ancres de filtres de galerie : `#salon`, `#chambre`, `#exterieur`, `#repas`, `#bain`, `#golf`.
+
+## Médias et avis
+
+34 photographies actuelles Airbnb, deux montages de 25 secondes, images de Samanah et de Marrakech. Provenances dans `source/airbnb/`, `source/golf-page/` et `source/marrakech/`. Originaux, caches et planches de sélection exclus de Git. Les scripts médias sont optionnels et ne reproduisent pas à eux seuls toutes les optimisations finales de la review.
+
+Les dix avis affichés sont des résumés éditoriaux attribués et datés, issus d’un relevé du 17 octobre 2026. Aucun calendrier ni avis n’est synchronisé automatiquement.
+
+Les médias tiers conservent leurs droits et crédits : ce dépôt ne leur attribue aucune licence supplémentaire. Voir les manifestes et le guide de déploiement.
+
+## État de livraison
+
+L’aperçu Sites existant reste privé. `.openai/hosting.json` identifie cet hébergement ; il n’est pas nécessaire au build ni au futur déploiement Cloudflare et ne contient aucun secret requis.
+
+**Cloudflare attend le transfert du domaine. Aucun déploiement automatique n’est configuré.** `public/robots.txt` bloque volontairement l’indexation de l’aperçu. Le domaine canonique et ce blocage seront à revoir au lancement public, pas avant.
