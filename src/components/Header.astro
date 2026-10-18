@@ -1,5 +1,6 @@
 ---
 import GolfBall from './GolfBall.astro';
+import BrandLogo from './BrandLogo.astro';
 import { AIRBNB_URL } from '../data/villa';
 interface Props { currentPage: string }
 const { currentPage } = Astro.props;
@@ -13,13 +14,12 @@ const links = [
 ];
 ---
 <a class="skip" href="#main">Aller au contenu</a>
-{!heroHeader && <div class="topline">UNE VILLA PRIVÉE · GOLF DE SAMANAH, MARRAKECH</div>}
 <header class:list={['header', {'hero-header':heroHeader}]}>
   <button class="menu-toggle" aria-label="Ouvrir le menu" aria-controls="navigation" aria-expanded="false">
     <span></span><span></span><span></span><b>MENU</b>
   </button>
-  <a class="brand" href="/" aria-label="Villa Carissa, accueil">
-    <span class="wordmark"><span class="wordmark-villa">VILLA</span><span class="wordmark-name">CARISSA</span><small><i></i>SAMANAH · MARRAKECH<i></i></small></span>
+  <a class="brand-signature" href="/" aria-label="Villa Carissa, accueil">
+    <BrandLogo id="header" />
   </a>
   <a class="button header-cta" href={AIRBNB_URL} target="_blank" rel="noopener noreferrer" aria-label="Réserver sur Airbnb (nouvel onglet)">RÉSERVER <span aria-hidden="true"><GolfBall /></span></a>
   <button class="menu-scrim" aria-label="Fermer le menu" tabindex="-1" hidden></button>
