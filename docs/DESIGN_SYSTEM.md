@@ -28,7 +28,8 @@ Les panneaux et photographies possèdent des nuances et dégradés propres à ch
 
 | Élément | Police et taille |
 | --- | --- |
-| Lecture, légendes, menu, CTA, avis | Manrope, **19 px** |
+| Lecture, légendes, CTA, avis | Manrope, **19 px** |
+| Liens du menu principal | Cormorant Garamond, **19 px**, interligne final 1.5 |
 | Titres généraux | Cormorant Garamond, poids 400, tailles fluides |
 | H2 de base | `clamp(42px, 4.6vw, 70px)` |
 | H3 de base | 32 px, variantes selon section |
