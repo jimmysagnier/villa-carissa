@@ -23,6 +23,9 @@ footer.site-footer{padding:45px 6.5% 22px;background:#eeeee5}
 .footer-contact a{overflow-wrap:anywhere;max-width:100%}
 .footer-meta{max-width:1400px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:20px;border-top:1px solid #d3d7c7;color:var(--muted)}
 .footer-meta,.footer-meta span,.footer-meta a{font:400 12px/1.65 var(--sans)}
+.footer-meta>.footer-credit{flex:1;margin:0;text-align:center;font:400 12px/1.65 var(--sans)}
+.footer-credit a{text-decoration:underline;text-underline-offset:3px}
+.footer-meta>a{white-space:nowrap}
 .footer-meta>div{display:flex;flex-wrap:wrap;gap:22px}
 .site-footer a:hover{text-decoration:underline;text-underline-offset:5px}
 .site-footer .brand-signature:hover{text-decoration:none}
@@ -45,5 +48,8 @@ footer.site-footer{padding:45px 6.5% 22px;background:#eeeee5}
  .footer-links{gap:10px 20px;padding:0}
  .footer-contact{grid-column:auto;grid-row:auto;margin:0;padding:0;gap:8px}
  .footer-meta{align-items:flex-start;flex-direction:column;gap:12px;padding-top:17px}
+ .footer-meta>.footer-credit{text-align:left;flex:auto}
 }
 @media(max-width:360px){body .header.header{padding:0 10px;gap:6px}.header .carissa-emblem{width:22px;height:30px}.header .carissa-name{font-size:16px}.header .carissa-location{display:none}.header .carissa-signature{gap:5px}body .header.header .header-cta{padding:8px}}
+
+body .contact-intro h1{max-width:900px;margin:0 auto 28px;font:400 clamp(28px,3.2vw,46px)/1.35 var(--sans);letter-spacing:.055em;text-wrap:balance}

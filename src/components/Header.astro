@@ -25,7 +25,7 @@ const links = [
   <button class="menu-scrim" aria-label="Fermer le menu" tabindex="-1" hidden></button>
   <nav id="navigation" aria-label="Navigation principale" inert>
     <span class="menu-eyebrow">BIENVENUE À LA VILLA CARISSA</span>
-    {links.map(({key,url,label},i)=><a href={url} aria-current={currentPage===key?'page':undefined}><span class="nav-number">0{i+1}</span>{label}<span class="nav-arrow" aria-hidden="true"><GolfBall /></span></a>)}
+    {links.map(({key,url,label})=><a href={url} aria-current={currentPage===key?'page':undefined}>{label}<span class="nav-arrow" aria-hidden="true"><GolfBall /></span></a>)}
     <div class="menu-contact"><span>UNE QUESTION SUR VOTRE SÉJOUR ?</span><a href="mailto:reservation@villacarissa-samanah.com">reservation@villacarissa-samanah.com</a></div>
   </nav>
 </header>
