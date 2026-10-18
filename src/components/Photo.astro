@@ -6,14 +6,17 @@ interface Props {
   sizes?: string;
   loading?: 'lazy' | 'eager';
   class?: string;
+  defer?: boolean;
 }
-const { id, alt, sizes='(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw', loading='lazy', class:className='' } = Astro.props;
+const { id, alt, sizes='(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw', loading='lazy', class:className='', defer=false } = Astro.props;
 const photo = photos.find(p=>p.id===id);
 if (!photo) throw new Error(`Unknown villa photo: ${id}`);
-const candidates = [800,1600].map(size=>{
+const candidates = [480,800,1600].map(size=>{
   const width = Math.round(photo.width*Math.min(1,size/Math.max(photo.width,photo.height)));
   return { width, src:photo.src.replace('.webp',`-${size}.webp`) };
 });
 const srcset = [...new Map(candidates.map(p=>[p.width,p])).values()].map(p=>`${p.src} ${p.width}w`).join(', ');
+const placeholder='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg"/%3E';
 ---
-<img src={photo.src} srcset={srcset} sizes={sizes} alt={alt||photo.caption} width={photo.width} height={photo.height} loading={loading} decoding="async" class={className} />
+<img src={defer?placeholder:photo.src} srcset={defer?undefined:srcset} data-deferred-src={defer?photo.src:undefined} data-deferred-srcset={defer?srcset:undefined} sizes={sizes} alt={alt??photo.caption} width={photo.width} height={photo.height} loading={loading} decoding="async" class:list={[className,{'deferred-photo':defer}]} />
+{defer && <noscript><style is:inline>img.deferred-photo{display:none!important}</style><img src={photo.src} srcset={srcset} sizes={sizes} alt={alt??photo.caption} width={photo.width} height={photo.height} loading="lazy" decoding="async" /></noscript>}

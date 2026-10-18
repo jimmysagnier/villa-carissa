@@ -1,5 +1,5 @@
 .villa-description{max-width:1100px;margin:0 auto;padding:100px 55px 90px;text-align:center}
-.villa-description>.eyebrow{color:#8c7853;font-size:19px;letter-spacing:.24em}
+.villa-description>.eyebrow{color:#78623e;font-size:19px;letter-spacing:.24em}
 .villa-description h2{font-size:clamp(43px,4.5vw,66px);line-height:1.08;margin:24px 0 30px}
 .description-rule{display:block;width:48px;height:1px;background:#b2a07c;margin:0 auto 38px}
 .description-copy{display:grid;grid-template-columns:1fr 1fr;gap:42px;text-align:left}
@@ -39,7 +39,7 @@
 .mosaic-footer p{font-size:19px}
 .mosaic-footer .text-link{font-size:19px;gap:30px}
 .guest-reviews{padding:90px 50px 80px;border-top:1px solid var(--line);text-align:center;max-width:1200px;margin:auto}
-.review-heading .eyebrow{font-size:19px;color:#8c7853}
+.review-heading .eyebrow{font-size:19px;color:#78623e}
 .review-heading h2{font-size:57px;margin:22px 0 45px}
 .review-quotes{display:grid;grid-template-columns:1fr 1fr;gap:65px;margin-bottom:38px}
 .review-quotes figure{margin:0;padding:0 20px}
@@ -53,7 +53,7 @@
 .gallery-section .filters{gap:22px}
 .gallery-section .filters button{white-space:nowrap}
 .contact-reservation{max-width:560px;align-self:center}
-.contact-reservation>.eyebrow{color:#8c7853;margin-bottom:22px}
+.contact-reservation>.eyebrow{color:#78623e;margin-bottom:22px}
 .contact-reservation h2{font-size:56px;margin-bottom:28px}
 .contact-reservation>p{font-size:19px;line-height:2}
 .contact-reservation>.button{margin:28px 0 22px;font-size:19px;padding:19px 25px}

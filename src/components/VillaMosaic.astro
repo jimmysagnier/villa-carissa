@@ -14,10 +14,10 @@ const tiles = [
 <section class="villa-spaces" id="espaces" aria-labelledby="spaces-title">
   <div class="mosaic-heading"><span class="eyebrow">LA MAISON EN IMAGES</span><h2 id="spaces-title">À chaque espace,<br><em>ses petits moments.</em></h2></div>
   <div class="villa-mosaic">
-    {tiles.map(tile=><a class={`mosaic-tile mosaic-${tile.key}`} href={`/toutes-les-photos/#${tile.hash}`} aria-label={`Découvrir ${tile.title.toLowerCase()} en photos`}>
-      <Photo id={tile.photo} sizes={tile.key==='dormir'?'(max-width: 600px) 100vw, 35vw':'(max-width: 600px) 50vw, 40vw'} />
+    {tiles.map(tile=><a class={`mosaic-tile mosaic-${tile.key}`} href={`/toutes-les-photos/#${tile.hash}`}>
+      <Photo id={tile.photo} defer sizes={tile.key==='dormir'?'1000px':tile.key==='bains'?'(max-width: 600px) 100vw, 40vw':'(max-width: 600px) 420px, 40vw'} />
       <span class="mosaic-shade"></span>
-      <div class="mosaic-label"><h3>{tile.title}</h3><span>{tile.subtitle}</span></div>
+      <div class="mosaic-label" id={`mosaic-label-${tile.key}`}><h3>{tile.title}</h3> <span>{tile.subtitle}</span></div>
       <span class="mosaic-action" aria-hidden="true"><ExploreIcon /></span>
     </a>)}
   </div>

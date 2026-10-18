@@ -9,7 +9,7 @@ import { reviews } from '../data/reviews.json';
   <div class="reviews-track" id="reviews-track" role="region" aria-label="Les 10 avis de voyageurs" tabindex="0">
     {reviews.map(review => <article class="review-card" aria-label={`Avis de ${review.name}, ${review.displayDate}, ${review.rating} sur 5`}>
       <header class="review-card-head"><strong>{review.name}</strong><time datetime={review.date}>{review.displayDate}</time></header>
-      <div class="review-rating" aria-label={`${review.rating} étoiles sur 5`}>
+      <div class="review-rating" role="img" aria-label={`${review.rating} étoiles sur 5`}>
         <span class="review-stars" aria-hidden="true">{Array.from({length:5},(_,i)=><svg viewBox="0 0 20 20" width="17" height="17" class:list={['review-star',{'is-filled':i<review.rating}]}><path d="m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4L10 14.4l-4.8 2.5.9-5.4L2.2 7.7l5.4-.8Z" /></svg>)}</span>
         <span aria-hidden="true">{review.rating}/5</span>
       </div>

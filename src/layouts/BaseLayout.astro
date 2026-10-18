@@ -1,4 +1,5 @@
 ---
+import fontFaces from '../styles/fonts.css?raw';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Dialogs from '../components/Dialogs.astro';
@@ -14,6 +15,7 @@ interface Props {
   currentPage: string;
 }
 const { title, description, currentPage } = Astro.props;
+const canonicalUrl=new URL(Astro.url.pathname,Astro.site);
 ---
 <!doctype html>
 <html lang="fr">
@@ -26,16 +28,22 @@ const { title, description, currentPage } = Astro.props;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content={canonicalUrl} />
+    {currentPage!=='error' && <link rel="canonical" href={canonicalUrl} />}
     <meta property="og:image" content={new URL('/assets/villa-poster.webp', Astro.site).href} />
     <link rel="icon" href="/assets/favicon-golfer.svg" type="image/svg+xml" sizes="any" />
-    <link rel="preload" href="/assets/font-1.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="stylesheet" href="/assets/fonts.css" />
+    <link rel="preload" href="/assets/font-0.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/font-1.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/font-3.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/font-2.woff2" as="font" type="font/woff2" crossorigin />
+    <style is:inline set:html={fontFaces} />
   </head>
   <body class={`page-${currentPage}`}>
     <Header currentPage={currentPage} />
     <main id="main"><slot /></main>
     <Footer />
-    <Dialogs />
+    {currentPage==='gallery' && <Dialogs />}
     <script>
       import '../scripts/app.js';
     </script>

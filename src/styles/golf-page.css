@@ -16,7 +16,7 @@
 .golf-hero-credit:hover{text-decoration:underline;text-underline-offset:5px}
 .golf-wrap{width:calc(100% - 120px);max-width:1280px;margin:0 auto}
 .golf-parcours,.golf-academy{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding-top:120px;padding-bottom:120px}
-.golf-editorial-copy>.eyebrow{font-size:19px;letter-spacing:.09em;line-height:1.6;color:#8b7651;margin-bottom:25px}
+.golf-editorial-copy>.eyebrow{font-size:19px;letter-spacing:.09em;line-height:1.6;color:#78623e;margin-bottom:25px}
 .golf-editorial-copy h2{font-size:clamp(45px,4.7vw,70px);line-height:1.06;margin-bottom:32px}
 .golf-editorial-copy>p{font-size:19px;line-height:1.9}
 .golf-editorial-copy>.text-link{margin-top:30px;font-size:19px}
@@ -44,7 +44,7 @@
 .golf-academy-options p{font-size:19px;line-height:1.7}
 .golf-nearby{background:var(--cream);padding:100px 0 105px}
 .golf-section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:55px;margin-bottom:50px}
-.golf-section-heading .eyebrow{font-size:19px;letter-spacing:.09em;margin-bottom:22px;color:#8b7651}
+.golf-section-heading .eyebrow{font-size:19px;letter-spacing:.09em;margin-bottom:22px;color:#78623e}
 .golf-section-heading h2{font-size:clamp(45px,4.7vw,70px);line-height:1.06}
 .golf-section-heading>p{font-size:19px;line-height:1.8;max-width:370px}
 .golf-courses-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:65px 30px}
@@ -53,7 +53,7 @@
 .golf-course-photo .golf-photo{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
 .golf-course-card a:hover .golf-photo,.golf-course-card a:focus-visible .golf-photo{transform:scale(1.035)}
 .golf-course-plus{position:absolute;right:18px;bottom:18px;color:#fff;filter:drop-shadow(0 1px 4px #0008)}
-.golf-course-card .eyebrow{font-size:19px;font-weight:400;letter-spacing:.035em;line-height:1.6;margin-bottom:14px;color:#7c6b4d}
+.golf-course-card .eyebrow{font-size:19px;font-weight:400;letter-spacing:.035em;line-height:1.6;margin-bottom:14px;color:#78623e}
 .golf-course-card h3{font-size:36px;line-height:1.1;margin-bottom:16px}
 .golf-course-card p{font-size:19px;line-height:1.8}
 .golf-course-featured .golf-course-photo{aspect-ratio:4/5}

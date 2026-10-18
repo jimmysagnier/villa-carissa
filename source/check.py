@@ -13,7 +13,7 @@ class Page(HTMLParser):
         a=dict(attrs)
         if a.get('id'):self.ids.add(a['id'])
         if tag=='h1':self.h1+=1
-        for k in ['src','href','poster','data-desktop-src','data-mobile-src']:
+        for k in ['src','href','poster','data-desktop-src','data-mobile-src','data-deferred-src']:
             if k in a:self.links.append(a[k])
 
 files=list(dist.rglob('*.html'))

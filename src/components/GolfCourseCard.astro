@@ -5,8 +5,8 @@ interface Props { course: { image:string;name:string;tag:string;copy:string;url:
 const {course}=Astro.props;
 ---
 <article class:list={['golf-course-card',{'golf-course-featured':course.featured}]}>
-  <a href={course.url} target="_blank" rel="noopener noreferrer" aria-label={`Découvrir ${course.name} (nouvel onglet)`}>
-    <div class="golf-course-photo"><GolfImage name={course.image} alt={`Le parcours de ${course.name}, à Marrakech`} sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" /><span class="golf-course-plus"><ExploreIcon /></span></div>
+  <a href={course.url} target="_blank" rel="noopener noreferrer">
+    <div class="golf-course-photo"><GolfImage name={course.image} alt={`Le parcours de ${course.name}, à Marrakech`} sizes={course.featured&&course.image==='assoufid'?'(max-width: 800px) 100vw, 33vw':'(max-width: 700px) 100vw, (max-width: 800px) 50vw, 33vw'} /><span class="golf-course-plus"><ExploreIcon /></span></div>
     <span class="eyebrow">{course.tag}</span>
     <h3>{course.name}</h3>
     <p>{course.copy}</p>

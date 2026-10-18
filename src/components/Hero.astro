@@ -5,6 +5,8 @@ import { AIRBNB_URL } from '../data/villa';
 <section class="hero" aria-label="Bienvenue à la Villa Carissa">
   <div class="hero-media">
     <picture>
+      <source type="image/avif" media="(max-width: 600px)" srcset="/assets/villa-poster-mobile.avif" />
+      <source type="image/avif" media="(min-width: 601px)" srcset="/assets/villa-poster.avif" />
       <source media="(max-width: 600px)" srcset="/assets/villa-poster-mobile.webp" />
       <img src="/assets/villa-poster.webp" alt="La Villa Carissa et sa piscine privée sur le golf de Samanah" fetchpriority="high" loading="eager" width="1920" height="1080" />
     </picture>
@@ -17,4 +19,5 @@ import { AIRBNB_URL } from '../data/villa';
     <h1>Une villa à vous.<br>Tout Marrakech à vivre.</h1>
     <a href={AIRBNB_URL} target="_blank" rel="noopener noreferrer" class="button glass">RÉSERVER SUR AIRBNB <GolfBall /></a>
   </div>
+  <button class="hero-motion" data-hero-motion aria-label="Mettre la vidéo en pause" title="Mettre la vidéo en pause" hidden><svg class="hero-pause-glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="1.8"/></svg><svg class="hero-play-glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m8 5 11 7-11 7Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
 </section>

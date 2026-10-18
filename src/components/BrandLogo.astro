@@ -3,8 +3,8 @@ interface Props { id: string }
 const {id}=Astro.props;
 const maskId=`carissa-golfer-${id}`;
 ---
-<span class="carissa-signature" aria-hidden="true">
-  <svg class="carissa-emblem" viewBox="0 0 100 110" fill="none">
+<span class="carissa-signature">
+  <svg aria-hidden="true" class="carissa-emblem" viewBox="0 0 100 110" fill="none">
     <defs><mask id={maskId}><rect width="100" height="110" fill="white"/>
       <path d="M48 16c-6 0-9 4-9 10l-2 3 3 2 1 5 6 2 7-7 1-5 4-1c2-1 1-4-2-5l-3-1c-1-2-3-3-6-3Z" fill="black"/>
       <path d="m40 36 10 1 12 7c2 2 1 6-1 10L52 69l-3 13-19-3 4-15-1-9-15-9c-3-2-4-5-3-8l3-12c1-3 4-5 7-4l7 4-3 5-5-1-2 10 14 5 4-9Z" fill="black"/>
@@ -15,5 +15,5 @@ const maskId=`carissa-golfer-${id}`;
     <path d="m83 42 9 2c4 1 6 7 3 9-2 1-5-1-5-4l-1-5" fill="currentColor"/>
     <path d="m32 80 17 3-1 7-7 11 1 6h-8l-1-10-5-9 1-7 3-1Z" fill="currentColor"/>
   </svg>
-  <span class="carissa-lettering"><span class="carissa-name">Villa Carissa</span><span class="carissa-location">Samanah · Marrakech</span></span>
+  <span class="carissa-lettering"><span class="carissa-name">Villa Carissa</span> <span class="carissa-location">Samanah · Marrakech</span></span>
 </span>

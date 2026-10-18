@@ -28,8 +28,8 @@ const orderedPhotos = order.map(id=>photos.find(p=>p.id===id)!);
       {groups.map(group=><button data-filter={group.key} aria-pressed={group.key==='all'?'true':'false'}>{group.name}<span>{group.key==='all'?photos.length:photos.filter(p=>p.group===group.key).length}</span></button>)}
     </div>
     <div class="gallery-grid">
-      {orderedPhotos.map(photo=><button class="gallery-item" data-category={photo.group} data-src={photo.src} data-caption={photo.caption} aria-label={`Agrandir : ${photo.caption}`}>
-        <Photo id={photo.id} />
+      {orderedPhotos.map((photo,index)=><button class="gallery-item" data-category={photo.group} data-src={photo.src} data-caption={photo.caption} aria-label={`Agrandir : ${photo.caption}`}>
+        <Photo id={photo.id} defer={index>0} loading={index===0?'eager':'lazy'} />
         <span>{photo.caption}<b aria-hidden="true"><ExploreIcon /></b></span>
       </button>)}
     </div>

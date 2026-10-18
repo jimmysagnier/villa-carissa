@@ -182,5 +182,24 @@
         "height": 711
       }
     ]
+  },
+  "samanah-atlas": {
+    "variants": [
+      {
+        "src": "/assets/samanah-golf-atlas-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/samanah-golf-atlas-1600.webp",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/assets/samanah-golf-atlas-2400.webp",
+        "width": 2400,
+        "height": 1600
+      }
+    ]
   }
 }

@@ -15,12 +15,12 @@
 .city-hero-caption:hover{text-decoration:underline;text-underline-offset:5px}
 .city-wrap{width:calc(100% - 120px);max-width:1280px;margin:0 auto}
 .city-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:110px 0 95px;align-items:center}
-.page-city .city-wrap .eyebrow{font-size:19px;letter-spacing:.065em;line-height:1.6;margin-bottom:24px;color:#806d4d}
+.page-city .city-wrap .eyebrow{font-size:19px;letter-spacing:.065em;line-height:1.6;margin-bottom:24px;color:#78623e}
 .city-intro h2,.city-heading h2,.city-wellness h2,.city-villa-return h2{font-size:clamp(45px,4.7vw,70px);line-height:1.06}
 .city-intro p,.city-heading>p,.city-place p,.city-wellness p,.city-villa-return p{font-size:19px;line-height:1.9}
 .city-chapters{display:flex;flex-direction:column;align-items:flex-start;margin-top:28px;gap:13px}
 .city-chapters a{font-size:19px;border-bottom:1px solid #a7a490;padding-bottom:5px;transition:color .2s}
-.city-chapters a:hover{color:#947347}
+.city-chapters a:hover{color:#78623e}
 .city-medina{padding-bottom:110px}
 .city-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:60px;margin-bottom:50px}
 .city-heading>p{max-width:390px}

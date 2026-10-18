@@ -111,7 +111,7 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
 .review-card-head strong,.review-card-head time,.review-rating,.review-summary{font-size:19px}
 .review-card-head strong{font-weight:600}
 .review-card-head time{color:var(--muted)}
-.review-rating{display:flex;align-items:center;gap:14px;margin:20px 0;color:#86734e}
+.review-rating{display:flex;align-items:center;gap:14px;margin:20px 0;color:#78623e}
 .review-stars{display:inline-flex;gap:4px;align-items:center}
 .review-star{fill:none;stroke:currentColor;stroke-width:1.1}
 .review-star.is-filled{fill:currentColor}
@@ -131,3 +131,15 @@ a:hover .golf-ball,button:hover .golf-ball{transform:rotate(25deg)}
  .reviews-controls button{gap:10px}
  .review-source{max-width:none}
 }
+
+/* Review: pause decorative motion without restoring the old hero control strip. */
+.hero-motion{position:absolute;z-index:2;right:24px;bottom:24px;width:44px;height:44px;display:grid;place-items:center;border:1px solid #ffffff8c;border-radius:50%;color:#fff;background:#17231c70}
+.hero-motion[hidden]{display:none}
+.hero-motion:hover{background:#17231cb3}
+.hero-play-glyph,.hero-motion.is-paused .hero-pause-glyph{display:none}
+.hero-motion.is-paused .hero-play-glyph{display:block}
+.golf-legends :focus-visible,.city-gardens :focus-visible,.hero :focus-visible,.golf-page-hero :focus-visible,.city-hero :focus-visible{outline-color:#f1d69c}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-motion{display:none}}
+
+.mosaic-tile noscript img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
