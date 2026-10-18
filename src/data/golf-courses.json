@@ -1,0 +1,14 @@
+[
+ {"image":"royal-palm","name":"Fairmont Royal Palm","tag":"LE JARDIN-PARCOURS","copy":"Un dessin de Cabell B. Robinson, entre plans d’eau, palmiers et vues sur l’Atlas.","url":"https://royalpalmgolfmarrakech.com/en/course/","featured":true},
+ {"image":"noria","name":"Noria Golf Club","tag":"L’EAU & L’ARCHITECTURE","copy":"Un tracé de Steve Forrest où bassins et paysages marocains rythment la partie.","url":"https://frmg.ma/noria-golf-club-marrakech/","featured":true},
+ {"image":"assoufid","name":"Assoufid Golf Club","tag":"LES RELIEFS DU DÉSERT","copy":"Le relief naturel, les oliviers et les cactus donnent son caractère à ce parcours.","url":"https://assoufid.com/fr/","featured":true},
+ {"image":"royal-marrakech","name":"Royal Golf Marrakech","tag":"L’HISTOIRE","copy":"Le Old Course, le New Course et un écrin arboré.","url":"https://royal-golf-marrakech.com/","featured":false},
+ {"image":"amelkis","name":"Amelkis Golf Resort","tag":"LE RELIEF","copy":"Trois boucles de neuf trous signées Cabell B. Robinson.","url":"https://www.visitmorocco.com/golf/fr/","featured":false},
+ {"image":"al-maaden","name":"Al Maaden Golf","tag":"L’ART EN PLEIN AIR","copy":"Bassins géométriques et sculptures monumentales accompagnent les fairways.","url":"https://www.almaadengolfresort.com/","featured":false},
+ {"image":"palm-ourika","name":"PalmGolf Ourika","tag":"L’ESPRIT DÉSERTIQUE","copy":"Oliviers, palmiers et perspectives sur les sommets de l’Atlas.","url":"https://palmgolfmarrakechourika.com/golf/","featured":false},
+ {"image":"montgomerie","name":"The Montgomerie","tag":"LA SIGNATURE","copy":"Un parcours de Colin Montgomerie, avec l’Atlas en toile de fond.","url":"https://frmg.ma/the-montgomerie-marrakech/","featured":false},
+ {"image":"palmeraie","name":"Golf Club Rotana Palmeraie","tag":"LA PALMERAIE","copy":"Lacs et palmiers, sur un dessin de Robert Trent Jones Sr.","url":"https://www.visitmorocco.com/golf/fr/","featured":false},
+ {"image":"atlas-golf","name":"Atlas Golf Marrakech","tag":"LE FORMAT COURT","copy":"Un neuf trous pour varier les plaisirs du jeu.","url":"https://www.atlasgolfmarrakech.com/fr/","featured":false},
+ {"image":"tony-jacklin","name":"The Tony Jacklin","tag":"LE JEU & L’ENTRAÎNEMENT","copy":"Un parcours signé Tony Jacklin, complété par un neuf trous par 3.","url":"https://www.visitmorocco.com/golf/fr/","featured":false},
+ {"image":"akenza","name":"Akenza Golf","tag":"UN AUTRE DÉSERT","copy":"Des paysages inspirés de l’Arizona, entre oueds et reliefs sculptés.","url":"https://www.almaadengolfresort.com/","featured":false}
+]

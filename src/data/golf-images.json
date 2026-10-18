@@ -1,0 +1,186 @@
+{
+  "academy": {
+    "variants": [
+      {
+        "src": "/assets/golf/academy-800.webp",
+        "width": 800,
+        "height": 530
+      },
+      {
+        "src": "/assets/golf/academy-1600.webp",
+        "width": 1600,
+        "height": 1060
+      },
+      {
+        "src": "/assets/golf/academy-2400.webp",
+        "width": 2400,
+        "height": 1590
+      }
+    ]
+  },
+  "akenza": {
+    "variants": [
+      {
+        "src": "/assets/golf/akenza-800.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "al-maaden": {
+    "variants": [
+      {
+        "src": "/assets/golf/al-maaden-800.webp",
+        "width": 557,
+        "height": 710
+      }
+    ]
+  },
+  "amelkis": {
+    "variants": [
+      {
+        "src": "/assets/golf/amelkis-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "assoufid": {
+    "variants": [
+      {
+        "src": "/assets/golf/assoufid-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "atlas-golf": {
+    "variants": [
+      {
+        "src": "/assets/golf/atlas-golf-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "montgomerie": {
+    "variants": [
+      {
+        "src": "/assets/golf/montgomerie-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "noria": {
+    "variants": [
+      {
+        "src": "/assets/golf/noria-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "palm-ourika": {
+    "variants": [
+      {
+        "src": "/assets/golf/palm-ourika-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "palmeraie": {
+    "variants": [
+      {
+        "src": "/assets/golf/palmeraie-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "royal-marrakech": {
+    "variants": [
+      {
+        "src": "/assets/golf/royal-marrakech-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "royal-palm": {
+    "variants": [
+      {
+        "src": "/assets/golf/royal-palm-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  },
+  "samanah-02": {
+    "variants": [
+      {
+        "src": "/assets/golf/samanah-02-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/golf/samanah-02-1600.webp",
+        "width": 1600,
+        "height": 1066
+      },
+      {
+        "src": "/assets/golf/samanah-02-2400.webp",
+        "width": 2048,
+        "height": 1365
+      }
+    ]
+  },
+  "samanah-03": {
+    "variants": [
+      {
+        "src": "/assets/golf/samanah-03-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/golf/samanah-03-1600.webp",
+        "width": 1600,
+        "height": 1067
+      },
+      {
+        "src": "/assets/golf/samanah-03-2400.webp",
+        "width": 2400,
+        "height": 1600
+      }
+    ]
+  },
+  "samanah-09": {
+    "variants": [
+      {
+        "src": "/assets/golf/samanah-09-800.webp",
+        "width": 800,
+        "height": 534
+      },
+      {
+        "src": "/assets/golf/samanah-09-1600.webp",
+        "width": 1600,
+        "height": 1068
+      },
+      {
+        "src": "/assets/golf/samanah-09-2400.webp",
+        "width": 2400,
+        "height": 1601
+      }
+    ]
+  },
+  "tony-jacklin": {
+    "variants": [
+      {
+        "src": "/assets/golf/tony-jacklin-800.webp",
+        "width": 557,
+        "height": 711
+      }
+    ]
+  }
+}

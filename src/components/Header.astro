@@ -3,7 +3,7 @@ import GolfBall from './GolfBall.astro';
 import { AIRBNB_URL } from '../data/villa';
 interface Props { currentPage: string }
 const { currentPage } = Astro.props;
-const home = currentPage === 'home';
+const heroHeader = currentPage === 'home' || currentPage === 'golf';
 const links = [
   {key:'home', url:'/#la-villa', label:'La villa'},
   {key:'gallery', url:'/toutes-les-photos/', label:'La galerie'},
@@ -13,8 +13,8 @@ const links = [
 ];
 ---
 <a class="skip" href="#main">Aller au contenu</a>
-{!home && <div class="topline">UNE VILLA PRIVÉE · GOLF DE SAMANAH, MARRAKECH</div>}
-<header class:list={['header', {'hero-header':home}]}>
+{!heroHeader && <div class="topline">UNE VILLA PRIVÉE · GOLF DE SAMANAH, MARRAKECH</div>}
+<header class:list={['header', {'hero-header':heroHeader}]}>
   <button class="menu-toggle" aria-label="Ouvrir le menu" aria-controls="navigation" aria-expanded="false">
     <span></span><span></span><span></span><b>MENU</b>
   </button>
