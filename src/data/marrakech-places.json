@@ -1,0 +1,152 @@
+[
+  {
+    "id": "jemaa",
+    "group": "medina",
+    "tag": "LA MÉDINA",
+    "name": "La place Jemaa el-Fna",
+    "description": "À la tombée du jour, la place change de rythme. Les étals s’allument, les musiciens se répondent et les terrasses deviennent des observatoires sur la ville. Commencez par en faire le tour à pied, puis installez-vous en hauteur pour regarder Marrakech entrer dans la soirée.",
+    "url": "https://www.visitmorocco.com/fr/voyage/marrakech",
+    "alt": "Les étals et les passants sur la place Jemaa el-Fna",
+    "number": "01"
+  },
+  {
+    "id": "souks",
+    "group": "medina",
+    "tag": "ARTISANAT",
+    "name": "Les souks de la médina",
+    "description": "Lanternes ajourées, tapis, cuir et paniers tressés : les souks se découvrent au fil des ruelles et des métiers. Autour de Semmarine et de la place des Épices, prenez le temps de regarder les matières, d’échanger avec les artisans et de vous arrêter pour un thé.",
+    "url": "https://www.visitmorocco.com/fr/voyage/marrakech",
+    "alt": "Les lanternes en métal ajouré d’une boutique des souks de Marrakech",
+    "number": "02"
+  },
+  {
+    "id": "koutoubia",
+    "group": "medina",
+    "tag": "LE REPÈRE DE LA VILLE",
+    "name": "La Koutoubia",
+    "description": "Son minaret domine les toits et accompagne les promenades dans le centre de Marrakech. Pour en apprécier les proportions et la pierre ocre, faites le tour de la mosquée depuis l’extérieur, puis prolongez la balade dans les jardins qui l’entourent. Une belle halte en fin d’après-midi.",
+    "url": "https://www.visitmorocco.com/fr/voyage/marrakech/medina",
+    "alt": "La mosquée Koutoubia et son minaret de pierre ocre",
+    "number": "03"
+  },
+  {
+    "id": "bahia",
+    "group": "medina",
+    "tag": "PALAIS & PATIOS",
+    "name": "Le palais de la Bahia",
+    "description": "Derrière ses murs, une succession de cours, de jardins et de pièces finement décorées révèle l’art de vivre d’un palais marocain du XIXe siècle. Levez les yeux vers les plafonds peints, puis approchez-vous des zelliges et des boiseries : la visite se savoure dans les détails.",
+    "url": "https://www.visitmorocco.com/fr/experience/culture/musees-et-galeries-dart",
+    "alt": "La grande cour de marbre du palais de la Bahia, entourée de galeries",
+    "number": "04"
+  },
+  {
+    "id": "badi",
+    "group": "medina",
+    "tag": "HÉRITAGE SAADIEN",
+    "name": "Le palais El Badi",
+    "description": "De ce palais de la fin du XVIe siècle subsistent de grandes murailles, une cour monumentale et les traces d’un faste passé. Le vide et les proportions donnent au lieu sa force. Une découverte à associer aux tombeaux saadiens pour explorer le quartier de la Kasbah.",
+    "url": "https://mice.visitmarrakech.com/listing/palais-el-badi/",
+    "alt": "Les murailles et les vestiges du palais El Badi",
+    "number": "05"
+  },
+  {
+    "id": "medersa",
+    "group": "medina",
+    "tag": "ARCHITECTURE",
+    "name": "La médersa Ben Youssef",
+    "description": "Autour du bassin central, le bois sculpté, le stuc et les mosaïques composent un décor d’une grande finesse. Cette ancienne école coranique se découvre lentement, entre la cour et les petites chambres des étudiants. Un lieu à privilégier si vous aimez l’architecture et le travail des artisans.",
+    "url": "https://visitmarrakech.com/en/listing/medersa-ben-youssef/",
+    "alt": "Les zelliges et les arcades sculptées de la médersa Ben Youssef",
+    "number": "06"
+  },
+  {
+    "id": "saadiens",
+    "group": "medina",
+    "tag": "DANS LA KASBAH",
+    "name": "Les tombeaux saadiens",
+    "description": "Cette nécropole royale abrite des salles funéraires aux décors délicats, dont la célèbre salle des Douze Colonnes. Marbre, stuc et zelliges témoignent du savoir-faire de l’époque saadienne. La visite offre une autre lecture de Marrakech, plus intime, à quelques pas des rues animées de la Kasbah.",
+    "url": "https://visitmarrakech.com/listing/tombeaux-saadiens/",
+    "alt": "Le jardin et les pavillons de la nécropole des tombeaux saadiens",
+    "number": "07"
+  },
+  {
+    "id": "majorelle",
+    "group": "gardens",
+    "tag": "BOTANIQUE & COULEUR",
+    "name": "Le jardin Majorelle",
+    "description": "Le bleu intense des façades répond au vert des palmiers, des bambous et des cactus. Créé par le peintre Jacques Majorelle, puis préservé par Yves Saint Laurent et Pierre Bergé, ce jardin invite à ralentir. Réservez votre créneau sur le site officiel avant de vous déplacer.",
+    "url": "https://www.jardinmajorelle.com/lejardin/",
+    "alt": "La façade bleue du jardin Majorelle et ses pots jaunes",
+    "number": "08"
+  },
+  {
+    "id": "secret",
+    "group": "gardens",
+    "tag": "UN JARDIN DANS LA MÉDINA",
+    "name": "Le Jardin Secret",
+    "description": "Derrière une porte du quartier Mouassine, deux jardins se succèdent : l’un exotique, l’autre inspiré de la tradition islamique. Pavillons, allées et circulation de l’eau racontent l’histoire du lieu et de sa restauration. Une pause végétale à glisser au milieu d’une promenade dans les souks.",
+    "url": "https://www.lejardinsecretmarrakech.com/",
+    "alt": "Les allées, les plantations et les pavillons du Jardin Secret à Marrakech",
+    "number": "09"
+  },
+  {
+    "id": "menara",
+    "group": "gardens",
+    "tag": "OLIVIERS & GRAND BASSIN",
+    "name": "Les jardins de la Ménara",
+    "description": "Un pavillon au bord de l’eau, des oliviers et un horizon dégagé : la Ménara offre un paysage très différent des ruelles de la médina. Venez pour marcher et profiter de l’espace, avec l’Atlas en toile de fond lorsque le ciel est clair.",
+    "url": "https://www.visitmorocco.com/fr/voyage/marrakech/medina",
+    "alt": "Le pavillon de la Ménara vu depuis le grand bassin",
+    "number": "10"
+  },
+  {
+    "id": "ysl",
+    "group": "gardens",
+    "tag": "MODE & ARCHITECTURE",
+    "name": "Le musée Yves Saint Laurent",
+    "description": "À proximité de Majorelle, le musée explore l’univers d’Yves Saint Laurent et son lien avec Marrakech. Son bâtiment signé Studio KO mérite aussi le regard : la brique dessine une façade qui évoque la trame d’un tissu. Consultez la programmation officielle pour préparer votre visite.",
+    "url": "https://www.museeyslmarrakech.com/fr/",
+    "alt": "Une salle d’exposition du musée Yves Saint Laurent à Marrakech",
+    "number": "11"
+  },
+  {
+    "id": "bains",
+    "group": "wellness",
+    "tag": "UNE PAUSE POUR SOI",
+    "name": "Les Bains de Marrakech",
+    "description": "Dans la Kasbah, ce spa installé dans un riad propose hammams privatifs, bains et massages. Une parenthèse au calme après les promenades dans la médina, à choisir selon votre envie de soin. Consultez les prestations et organisez votre rendez-vous directement auprès de l’établissement.",
+    "url": "https://lesbainsdemarrakech.com/?lang=fr",
+    "alt": "L’atmosphère tamisée du hammam des Bains de Marrakech",
+    "number": "12"
+  },
+  {
+    "id": "agafay",
+    "group": "escapes",
+    "tag": "LE DÉSERT DE PIERRES",
+    "name": "Le désert d’Agafay",
+    "description": "Des collines minérales, des tons de sable et une lumière qui transforme le paysage au fil de la journée. Agafay est un désert de pierres aux portes de Marrakech. Partez pour le grand air et les panoramas, puis attardez-vous jusqu’au coucher du soleil si votre excursion le permet.",
+    "url": "https://visitmarrakech.com/destinations/agafay/",
+    "alt": "Les collines arides et les reliefs du désert de pierres d’Agafay",
+    "number": "13"
+  },
+  {
+    "id": "ourika",
+    "group": "escapes",
+    "tag": "VERS LE HAUT ATLAS",
+    "name": "La vallée de l’Ourika",
+    "description": "La route quitte la plaine pour suivre la vallée, entre villages, cultures en terrasses et rivière. Prévoyez une journée pour changer d’air et découvrir les paysages du Haut Atlas. Autour de Setti-Fatma, adaptez votre promenade au terrain et faites-vous accompagner pour les itinéraires de montagne.",
+    "url": "https://visitmarrakech.com/en/listing/ourika/",
+    "alt": "Les villages et les reliefs verdoyants de la vallée de l’Ourika",
+    "number": "14"
+  },
+  {
+    "id": "essaouira",
+    "group": "escapes",
+    "tag": "UNE JOURNÉE SUR L’ATLANTIQUE",
+    "name": "Une escapade à Essaouira",
+    "description": "Les remparts face à l’océan, les barques bleues du port et les ruelles blanches invitent à changer de rythme. Essaouira mérite une vraie journée d’excursion au départ de Marrakech. Marchez sur les fortifications, déjeunez près du port et gardez du temps pour les galeries de la médina.",
+    "url": "https://visitmarrakech.com/destinations/essaouira/",
+    "alt": "Les remparts d’Essaouira face à l’océan Atlantique",
+    "number": "15"
+  }
+]

@@ -1,0 +1,15 @@
+---
+import MarrakechImage from './MarrakechImage.astro';
+import ExploreIcon from './ExploreIcon.astro';
+interface Props { place: {id:string;group:string;number:string;tag:string;name:string;description:string;url:string;alt:string}; }
+const {place}=Astro.props;
+---
+<article class="city-place" id={`lieu-${place.id}`}>
+  <a class="city-place-image" href={place.url} target="_blank" rel="noopener noreferrer" aria-label={`Découvrir ${place.name} (nouvel onglet)`}>
+    <MarrakechImage name={place.id} alt={place.alt} sizes={place.group==='gardens'?'(max-width: 700px) 100vw, 50vw':'(max-width: 700px) 100vw, 33vw'} />
+    <span class="city-photo-plus" aria-hidden="true"><ExploreIcon /></span>
+  </a>
+  <span class="eyebrow">{place.number} / {place.tag}</span>
+  <h3>{place.name}</h3>
+  <p>{place.description}</p>
+</article>

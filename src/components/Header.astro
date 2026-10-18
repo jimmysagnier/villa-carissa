@@ -3,7 +3,7 @@ import GolfBall from './GolfBall.astro';
 import { AIRBNB_URL } from '../data/villa';
 interface Props { currentPage: string }
 const { currentPage } = Astro.props;
-const heroHeader = currentPage === 'home' || currentPage === 'golf';
+const heroHeader = currentPage === 'home' || currentPage === 'golf' || currentPage === 'city';
 const links = [
   {key:'home', url:'/#la-villa', label:'La villa'},
   {key:'gallery', url:'/toutes-les-photos/', label:'La galerie'},

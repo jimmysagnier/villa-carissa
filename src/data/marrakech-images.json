@@ -1,0 +1,435 @@
+{
+  "agafay": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/agafay-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/assets/marrakech/agafay-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/marrakech/agafay-1200.webp",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "src": "/assets/marrakech/agafay-1400.webp",
+        "width": 1400,
+        "height": 933
+      }
+    ],
+    "source": "https://visitmarrakech.com/destinations/agafay/",
+    "author": "CRT Marrakech-Safi",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "badi": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/badi-480.webp",
+        "width": 480,
+        "height": 280
+      },
+      {
+        "src": "/assets/marrakech/badi-800.webp",
+        "width": 800,
+        "height": 466
+      },
+      {
+        "src": "/assets/marrakech/badi-1200.webp",
+        "width": 1200,
+        "height": 699
+      },
+      {
+        "src": "/assets/marrakech/badi-1600.webp",
+        "width": 1600,
+        "height": 932
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:El_Badi_Palace,_Marrakesh,_Morocco,_20250125_1002_7127.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "bahia": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/bahia-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/assets/marrakech/bahia-800.webp",
+        "width": 800,
+        "height": 534
+      },
+      {
+        "src": "/assets/marrakech/bahia-1200.webp",
+        "width": 1200,
+        "height": 801
+      },
+      {
+        "src": "/assets/marrakech/bahia-1600.webp",
+        "width": 1600,
+        "height": 1068
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_large_court.jpg",
+    "author": "Val Traveler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "bains": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/bains-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/assets/marrakech/bains-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/marrakech/bains-1200.webp",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "src": "/assets/marrakech/bains-1600.webp",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "source": "https://lesbainsdemarrakech.com/?lang=fr",
+    "author": "Les Bains de Marrakech",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "essaouira": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/essaouira-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/assets/marrakech/essaouira-800.webp",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/assets/marrakech/essaouira-1200.webp",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "src": "/assets/marrakech/essaouira-1600.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Ramparts_of_Essaouira.JPG",
+    "author": "Kayaky",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "hero": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/hero-640.webp",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/assets/marrakech/hero-1000.webp",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "src": "/assets/marrakech/hero-1600.webp",
+        "width": 1600,
+        "height": 1200
+      },
+      {
+        "src": "/assets/marrakech/hero-2400.webp",
+        "width": 2400,
+        "height": 1800
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Jemaa_el-Fnaa_Marrakech_at_sunset.jpg",
+    "author": "Herokk",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "jemaa": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/jemaa-480.webp",
+        "width": 480,
+        "height": 261
+      },
+      {
+        "src": "/assets/marrakech/jemaa-800.webp",
+        "width": 800,
+        "height": 435
+      },
+      {
+        "src": "/assets/marrakech/jemaa-1200.webp",
+        "width": 1200,
+        "height": 653
+      },
+      {
+        "src": "/assets/marrakech/jemaa-1600.webp",
+        "width": 1600,
+        "height": 871
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Jamaa_El_Fna,_Marrakesh,_Morocco,_20250124_1804_7017.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "koutoubia": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/koutoubia-480.webp",
+        "width": 480,
+        "height": 432
+      },
+      {
+        "src": "/assets/marrakech/koutoubia-800.webp",
+        "width": 800,
+        "height": 719
+      },
+      {
+        "src": "/assets/marrakech/koutoubia-1200.webp",
+        "width": 1200,
+        "height": 1079
+      },
+      {
+        "src": "/assets/marrakech/koutoubia-1600.webp",
+        "width": 1600,
+        "height": 1439
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Kutubiyya_Mosque,_Marrakesh,_Morocco,_20250124_1834_7027.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "majorelle": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/majorelle-480.webp",
+        "width": 480,
+        "height": 360
+      },
+      {
+        "src": "/assets/marrakech/majorelle-800.webp",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "src": "/assets/marrakech/majorelle-1200.webp",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "src": "/assets/marrakech/majorelle-1600.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Majorelle_Garden_Marrakesh_Morocco_(16679374518).jpg",
+    "author": "Esin Üstün from Istanbul, Turkey",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "medersa": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/medersa-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/assets/marrakech/medersa-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/marrakech/medersa-1200.webp",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "src": "/assets/marrakech/medersa-1600.webp",
+        "width": 1600,
+        "height": 1067
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Medersa_Ben_Youssef_Madrasa_Marrakesh_3.jpg",
+    "author": "Marco Almbauer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "menara": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/menara-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/assets/marrakech/menara-800.webp",
+        "width": 800,
+        "height": 534
+      },
+      {
+        "src": "/assets/marrakech/menara-1100.webp",
+        "width": 1100,
+        "height": 734
+      }
+    ],
+    "source": "https://mice.visitmarrakech.com/listing/les-jardins-de-la-menara/",
+    "author": "CRT Marrakech-Safi",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "ourika": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/ourika-480.webp",
+        "width": 480,
+        "height": 432
+      },
+      {
+        "src": "/assets/marrakech/ourika-800.webp",
+        "width": 800,
+        "height": 720
+      },
+      {
+        "src": "/assets/marrakech/ourika-1118.webp",
+        "width": 1118,
+        "height": 1006
+      }
+    ],
+    "source": "https://visitmarrakech.com/en/listing/ourika/",
+    "author": "CRT Marrakech-Safi",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "saadiens": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/saadiens-480.webp",
+        "width": 480,
+        "height": 367
+      },
+      {
+        "src": "/assets/marrakech/saadiens-800.webp",
+        "width": 800,
+        "height": 612
+      },
+      {
+        "src": "/assets/marrakech/saadiens-1200.webp",
+        "width": 1200,
+        "height": 918
+      },
+      {
+        "src": "/assets/marrakech/saadiens-1600.webp",
+        "width": 1600,
+        "height": 1224
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%B1%CF%85%CF%83%CF%89%CE%BB%CE%B5%CE%AF%CE%BF_%CF%84%CF%89%CE%BD_%CE%A3%CE%B1%CE%B1%CE%BD%CF%84%CE%AF_1069.jpg",
+    "author": "C messier",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "secret": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/secret-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "src": "/assets/marrakech/secret-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/assets/marrakech/secret-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "source": "https://www.lejardinsecretmarrakech.com/",
+    "author": "Le Jardin Secret",
+    "license": "",
+    "licenseUrl": ""
+  },
+  "souks": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/souks-480.webp",
+        "width": 480,
+        "height": 351
+      },
+      {
+        "src": "/assets/marrakech/souks-800.webp",
+        "width": 800,
+        "height": 585
+      },
+      {
+        "src": "/assets/marrakech/souks-1200.webp",
+        "width": 1200,
+        "height": 878
+      },
+      {
+        "src": "/assets/marrakech/souks-1600.webp",
+        "width": 1600,
+        "height": 1170
+      }
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Oriental_hanging_lanterns._Souk_Haddadine,_Marrakech_Medina_(%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%AF%D9%8A%D9%86_%D9%85%D8%B1%D8%A7%D9%83%D8%B4).jpg",
+    "author": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "ysl": {
+    "variants": [
+      {
+        "src": "/assets/marrakech/ysl-480.webp",
+        "width": 480,
+        "height": 272
+      },
+      {
+        "src": "/assets/marrakech/ysl-800.webp",
+        "width": 800,
+        "height": 453
+      },
+      {
+        "src": "/assets/marrakech/ysl-1200.webp",
+        "width": 1200,
+        "height": 679
+      },
+      {
+        "src": "/assets/marrakech/ysl-1600.webp",
+        "width": 1600,
+        "height": 905
+      }
+    ],
+    "source": "https://www.museeyslmarrakech.com/fr/le-musee/",
+    "author": "Musée Yves Saint Laurent Marrakech",
+    "license": "",
+    "licenseUrl": ""
+  }
+}
