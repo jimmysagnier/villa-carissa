@@ -1,6 +1,18 @@
-# Déploiement futur · Cloudflare
+# Déploiement · Cloudflare Pages
 
-**Statut : différé à la demande du propriétaire, jusqu’au transfert du nom de domaine.** Ce dépôt ne connecte aucun compte Cloudflare, ne change aucun DNS et ne déploie pas automatiquement le site. Le workflow CI ne fait que valider le code.
+**État au 19 octobre 2026 : projet Pages créé, GitHub connecté et premier déploiement réussi.**
+
+- Projet : `villa-carissa` ; URL : https://villa-carissa.pages.dev/
+- Source : `jimmysagnier/villa-carissa`, branche `main`.
+- Preset Astro, commande `npm run build`, sortie `dist`, racine du dépôt.
+- Node 24.13.0 détecté depuis `.nvmrc` dans les journaux du premier build.
+- Premier déploiement : `a8b49db0-7d7c-489f-8c68-4cca577eace7`, commit `780bd92c73ad9c435bacb5bbcc23101a9ee51338`.
+- Liaison GitHub limitée au dépôt `villa-carissa`. Les futurs pushs sur `main` déclenchent les déploiements Pages.
+- Aucun domaine personnalisé raccordé lors de cette opération ; aucune modification de DNS ou de messagerie. L’ancien aperçu Sites garde ses accès.
+
+Les six pages ont été ouvertes dans le navigateur sur Pages. Le test HTTP automatisé depuis l’environnement d’exécution a renvoyé 403, tandis que le navigateur charge correctement les pages ; aucune modification de sécurité n’a été faite pour contourner ce comportement.
+
+Le workflow GitHub Actions ne fait que valider le code. La publication automatique est assurée séparément par la liaison Git native de Cloudflare.
 
 ## Ce qui est portable aujourd’hui
 
@@ -8,24 +20,24 @@ Le résultat `dist/` est un site statique autonome : HTML, CSS/JS, photos, vidé
 
 `.openai/hosting.json` décrit l’aperçu Sites existant. Conserver ce fichier pour cet historique ; ne pas le prendre pour une configuration Cloudflare ou y ajouter des credentials. Il n’est pas inclus dans le contenu public `dist/` par Astro.
 
-## Paramètres de départ lorsque le lancement sera demandé
+## Paramètres Pages actuels
 
 | Paramètre | Valeur de référence |
 | --- | --- |
 | Dépôt | `jimmysagnier/villa-carissa` |
-| Branche de production envisagée | `main` |
+| Branche de production | `main` |
 | Racine de build | Racine du dépôt |
 | Commandes locales reproductibles | `npm ci`, `npm run build` |
 | Dossier à publier | `dist` |
 | Runtime de build testé | Node 24.13.0 |
 | Serveur applicatif / secrets | Aucun |
 
-Un hébergement Cloudflare statique, par exemple Pages, convient à cette sortie. Choisir et vérifier alors la configuration officielle du produit réellement utilisé. Aucun fichier Wrangler ou workflow de déploiement anticipé n’a été ajouté.
+L’export statique fonctionne directement sur Pages. Aucun adaptateur Astro Cloudflare, fichier Wrangler, secret applicatif ou workflow GitHub de déploiement n’a été nécessaire.
 
 ## Travail à faire au lancement public
 
 1. Confirmer le domaine canonique définitif et le choix avec/sans `www`. Mettre à jour `site` dans `astro.config.mjs` : les canonical et Open Graph utilisent cette valeur.
-2. Connecter le dépôt au service Cloudflare choisi uniquement lorsque le propriétaire le demande. Garder une prévisualisation protégée si nécessaire.
+2. La connexion Git est déjà faite : utiliser ce projet Pages et son onglet Domaines personnalisés pour raccorder le domaine lorsque le propriétaire le demande. Ne pas recréer le projet.
 3. Configurer le domaine, HTTPS et la redirection de l’autre variante. Le transfert du domaine à lui seul ne constitue pas une demande de modifier les DNS.
 4. Transformer les deux alias historiques en redirections HTTP 301 sur l’hébergement final ; conserver les six routes principales. La route blog supprimée peut rester 404, aucun contenu n’étant à migrer.
 5. Lever volontairement `Disallow: /` dans `public/robots.txt` pour la production publique. Ajouter un sitemap du domaine final et son URL au robots. Garder les aperçus hors indexation via la configuration de l’hébergeur plutôt que partager par erreur un robots de production ouvert.
@@ -35,4 +47,8 @@ Un hébergement Cloudflare statique, par exemple Pages, convient à cette sortie
 
 ## Ne pas confondre les statuts
 
-Le dépôt GitHub contient les sources et les fichiers à construire. Le site hébergé garde son audience actuelle tant qu’aucun changement d’accès n’est demandé. Un push GitHub ne publie pas le site. Les scores de laboratoire enregistrés sur localhost ne décrivent pas les latences du futur hébergement Cloudflare.
+Le dépôt GitHub contient les sources. Un push vers `main` publie désormais automatiquement sur Pages. Un commit documentaire peut utiliser le préfixe `[CF-Pages-Skip]` pour éviter un build Pages ; ce préfixe ne remplace pas les contrôles GitHub Actions.
+
+L’URL `pages.dev` est accessible publiquement, avec indexation bloquée par `robots.txt` ; ce fichier n’est pas un contrôle d’accès. L’ancien aperçu Sites reste privé et indépendant. Le domaine définitif et les emails ne sont pas modifiés par un push GitHub.
+
+Les scores de laboratoire enregistrés sur localhost ne décrivent pas les latences du nouvel hébergement Cloudflare. Une nouvelle mesure sur le domaine final reste à effectuer.

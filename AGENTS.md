@@ -52,4 +52,6 @@ Le code de `src/` est la source de vérité du rendu. Les tokens JSON documenten
 
 GitHub est la destination de reprise du code. Commits ciblés ; ne pas forcer un push ni réécrire l’historique sans demande. Ne jamais committer de secrets, `.env`, caches, logs, captures de session ou originaux ignorés.
 
-**L’intégration Cloudflare attend le transfert du domaine.** Ne pas créer de projet Cloudflare, connecter GitHub, changer les DNS, lever le blocage d’indexation ou déployer automatiquement pour une simple modification de code. Attendre une demande explicite de lancement. Préserver les accès de l’aperçu privé existant si cet hébergement est utilisé.
+**Depuis le 19 octobre 2026, Cloudflare Pages est connecté à GitHub** : projet `villa-carissa`, branche `main`, sortie `dist`, URL `https://villa-carissa.pages.dev/`. Un push vers `main` publie automatiquement sur Pages. Pour une modification de documentation seule qui ne doit pas reconstruire le site, le préfixe de commit `[CF-Pages-Skip]` est disponible.
+
+Le domaine personnalisé reste à raccorder. Ne pas changer les DNS, déplacer la messagerie IONOS ou lever le blocage d’indexation sans demande correspondante. Ne pas créer un second projet Pages pour ce site. Préserver les accès de l’ancien aperçu Sites privé si cet hébergement est utilisé.
