@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://villa-carissa-samanah.fairloon33.chatgpt.site',
+  site: 'https://villacarissa-samanah.com',
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory', inlineStylesheets: 'always' },
