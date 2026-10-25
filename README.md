@@ -37,7 +37,7 @@ Ne pas lancer `dev` et `preview` simultanément sur le même port. Les photos, v
 | [Style éditorial](docs/CONTENT_STYLE.md) | Ton, faits, textes imposés et décisions de contenu |
 | [Architecture et code](docs/ARCHITECTURE.md) | Fichiers, cascade CSS, interactions et données |
 | [Contribuer et vérifier](docs/CONTRIBUTING.md) | Processus de modification et contrôles |
-| [Déploiement Cloudflare](docs/DEPLOYMENT.md) | Pages connecté, déploiements Git et raccordement du domaine à venir |
+| [Déploiement Cloudflare](docs/DEPLOYMENT.md) | Domaine public, déploiements Git, DNS et messagerie |
 | [État de la review](docs/REVIEW_2026-10-18.md) | Mesures, limites et améliorations restantes |
 
 Pour une autre IA : commencer par `AGENTS.md`, puis lire le guide correspondant à la modification. Le dépôt suffit à reprendre le site sans retrouver l’historique de conversation.
@@ -84,6 +84,6 @@ Les médias tiers conservent leurs droits et crédits : ce dépôt ne leur attri
 
 L’aperçu Sites existant reste privé. `.openai/hosting.json` identifie cet hébergement ; il n’est pas nécessaire au build ni au futur déploiement Cloudflare et ne contient aucun secret requis.
 
-Depuis le **19 octobre 2026**, le projet Cloudflare Pages **`villa-carissa`** est connecté à ce dépôt, branche `main`, et sert le site sur [villa-carissa.pages.dev](https://villa-carissa.pages.dev/). Les prochains pushs sur `main` déclenchent automatiquement un build et une publication Pages ; GitHub Actions reste limité aux contrôles. Le domaine personnalisé n’a pas encore été raccordé.
+Depuis le **19 octobre 2026**, le projet Cloudflare Pages **`villa-carissa`** est connecté à ce dépôt, branche `main`. Les prochains pushs sur `main` déclenchent automatiquement un build et une publication Pages ; GitHub Actions reste limité aux contrôles.
 
-`public/robots.txt` bloque toujours volontairement l’indexation de cet aperçu accessible par URL. Le domaine canonique et ce blocage seront à revoir lors du lancement sur le domaine définitif. Le blocage robots n’est pas une protection par mot de passe.
+Depuis le **25 octobre 2026**, le site public est [villacarissa-samanah.com](https://villacarissa-samanah.com/), avec HTTPS actif et redirection permanente de `www` vers la racine. Le domaine canonique, Open Graph, `robots.txt` et le [sitemap des six pages](https://villacarissa-samanah.com/sitemap.xml) utilisent cette adresse. L’indexation publique est autorisée ; `public/_headers` applique `noindex, nofollow` aux adresses Pages. Les deux alias historiques ont des redirections HTTP 301 dans `public/_redirects`. La messagerie reste chez IONOS.

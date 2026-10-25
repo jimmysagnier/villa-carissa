@@ -25,7 +25,7 @@ Node de référence 24.13.0, TypeScript 6.0.3 et `@astrojs/check` 0.9.10. Utilis
 | `public/assets/` | Fichiers copiés tels quels dans dist/assets/ |
 | `source/` | Archives de provenance et outils de fabrication |
 
-Les six routes principales figurent dans le README. La page 404 est séparée ; ses métadonnées ne créent pas de canonical. Les alias Astro génèrent actuellement des redirections HTML ; les convertir en HTTP 301 sur l’hébergement définitif.
+Les six routes principales figurent dans le README et `src/pages/sitemap.xml.ts`. La page 404 est séparée ; ses métadonnées ne créent pas de canonical. Les alias Astro conservent leur repli HTML ; Cloudflare Pages applique leurs redirections HTTP 301 via `public/_redirects`. `astro.config.mjs` définit le domaine canonique `https://villacarissa-samanah.com`. Le robots public autorise l’indexation et référence le sitemap ; `public/_headers` applique `noindex, nofollow` aux adresses Pages uniquement.
 
 ## Cascade CSS : point d’attention
 
