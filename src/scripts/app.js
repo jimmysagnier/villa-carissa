@@ -74,25 +74,33 @@
  const reviewTrack=$('#reviews-track');
  if(reviewTrack){
   const cards=$$('.review-card',reviewTrack), controls=$('.reviews-controls'), previous=$('[data-reviews-prev]'), next=$('[data-reviews-next]'), position=$('.reviews-position');
-  const step=()=>cards.length>1?cards[1].offsetLeft-cards[0].offsetLeft:reviewTrack.clientWidth;
-  const perPage=()=>Math.max(1,Math.round(reviewTrack.clientWidth/step()));
-  let frame;
+  let cardStep=1,visibleCards=1,maxScroll=0,frame;
   const updateReviews=()=>{
-   const first=Math.min(cards.length-1,Math.max(0,Math.round(reviewTrack.scrollLeft/step())));
-   const last=Math.min(cards.length,first+perPage());
-   previous.disabled=reviewTrack.scrollLeft<2;
-   next.disabled=reviewTrack.scrollLeft>=reviewTrack.scrollWidth-reviewTrack.clientWidth-2;
-   position.textContent='Avis '+(first+1)+(last>first+1?'–'+last:'')+' sur '+cards.length;
+   frame=undefined;
+   const scrollLeft=reviewTrack.scrollLeft;
+   const first=Math.min(cards.length-1,Math.max(0,Math.round(scrollLeft/cardStep)));
+   const last=Math.min(cards.length,first+visibleCards);
+   previous.disabled=scrollLeft<2;
+   next.disabled=scrollLeft>=maxScroll-2;
+   const label='Avis '+(first+1)+(last>first+1?'–'+last:'')+' sur '+cards.length;
+   if(position.textContent!==label)position.textContent=label;
   };
+  const scheduleReviews=()=>{if(frame===undefined)frame=requestAnimationFrame(updateReviews)};
   function moveReviews(direction){
-   const amount=step()*perPage();
+   const amount=cardStep*visibleCards;
    reviewTrack.scrollBy({left:direction*amount,behavior:reduced.matches?'instant':'smooth'});
   }
   controls.hidden=false;
   previous.addEventListener('click',()=>moveReviews(-1));next.addEventListener('click',()=>moveReviews(1));
-  reviewTrack.addEventListener('scroll',()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(updateReviews)},{passive:true});
-  new ResizeObserver(updateReviews).observe(reviewTrack);
-  updateReviews();
+  reviewTrack.addEventListener('scroll',scheduleReviews,{passive:true});
+  // ResizeObserver runs after layout: measure once, then update controls in the next frame.
+  new ResizeObserver(()=>{
+   const width=reviewTrack.clientWidth;
+   cardStep=Math.max(1,cards.length>1?cards[1].offsetLeft-cards[0].offsetLeft:width);
+   visibleCards=Math.max(1,Math.round(width/cardStep));
+   maxScroll=reviewTrack.scrollWidth-width;
+   scheduleReviews();
+  }).observe(reviewTrack);
  }
 
 })();

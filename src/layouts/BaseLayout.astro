@@ -33,10 +33,12 @@ const canonicalUrl=new URL(Astro.url.pathname,Astro.site);
     {currentPage!=='error' && <link rel="canonical" href={canonicalUrl} />}
     <meta property="og:image" content={new URL('/assets/villa-poster.webp', Astro.site).href} />
     <link rel="icon" href="/assets/favicon-golfer.svg" type="image/svg+xml" sizes="any" />
-    <link rel="preload" href="/assets/font-0.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/font-1.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/font-3.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/font-2.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/font-4.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/font-5.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/font-0.woff2" as="font" type="font/woff2" crossorigin />
     <style is:inline set:html={fontFaces} />
   </head>
   <body class={`page-${currentPage}`}>
