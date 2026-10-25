@@ -39,6 +39,7 @@ Ne pas lancer `dev` et `preview` simultanément sur le même port. Les photos, v
 | [Contribuer et vérifier](docs/CONTRIBUTING.md) | Processus de modification et contrôles |
 | [Déploiement Cloudflare](docs/DEPLOYMENT.md) | Domaine public, déploiements Git, DNS et messagerie |
 | [État de la review](docs/REVIEW_2026-10-18.md) | Mesures, limites et améliorations restantes |
+| [Performance mobile](docs/PERFORMANCE_2026-10-25.md) | Allègement, corrections du rendu et mesures sur le domaine public |
 
 Pour une autre IA : commencer par `AGENTS.md`, puis lire le guide correspondant à la modification. Le dépôt suffit à reprendre le site sans retrouver l’historique de conversation.
 
