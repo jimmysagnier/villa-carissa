@@ -3,7 +3,7 @@
 .carissa-signature{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
 .carissa-emblem{width:46px;height:51px;flex:none}
 .carissa-lettering{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
-.carissa-name{font:500 28px/1 var(--serif);text-transform:uppercase;letter-spacing:.055em}
+.carissa-name{font:500 28px/1 'Carissa Logo',var(--serif);text-transform:uppercase;letter-spacing:.055em}
 .carissa-location{font:400 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.17em}
 body .header.header{height:112px;padding:0 6.5%;grid-template-columns:1fr auto 1fr;grid-template-rows:auto;align-content:normal;align-items:center;gap:24px}
 .header .brand-signature{grid-column:2;grid-row:1;justify-self:center;position:relative;z-index:2}
